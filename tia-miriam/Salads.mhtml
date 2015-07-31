@@ -1,0 +1,43 @@
+	<div class="ribbon">
+							<div class="ribbon-corner-left"></div>
+							<h1 class="ribbon-center" style="width: 870px">Salads</h1>
+							<div class="ribbon-corner-right"></div>
+						</div>
+						<div class="clear"></div>
+						<div class="devider"></div>
+						<article>
+						<ul id="menuCategories">
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Cranberry Apple Coal Fired Chicken Sal=
+ad</p>
+								<img src="http://web.archive.org/web/20141016141859im_/http://lat=
+inchicksrestaurant.com/img/photos/images/DSC_0458.jpg" width="350" height=
+="234" alt="Sides">
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">BBQ Coal Fired Chicken Salad</p>
+								<img src="http://web.archive.org/web/20141016141859im_/http://lat=
+inchicksrestaurant.com/img/photos/images/DSC_0481.jpg" width="350" height=
+="234" alt="Sides">
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Tasty Asian Chick Salad</p>
+								<img src="http://web.archive.org/web/20141016141859im_/http://lat=
+inchicksrestaurant.com/img/photos/images/DSC_0377.jpg" width="350" height=
+="234" alt="Sides">
+							</li><!--Sides-->
+							<li>
+								<ul id="columnList">
+									<li>
+										<p>Caesar Salad - with Coal Fired Chicken.</p>
+									</li><!--Sides-->
+									<li>
+										<p>House Salad - with Coal Fired Chicken.</p>
+									</li><!--Sides-->
+									<li>
+										<p>Soup of the week.</p>
+									</li><!--Sides-->
+								</ul>
+							</li>
+						</ul><!--MenuCategories-->
+						</article>

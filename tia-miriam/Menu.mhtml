@@ -1,0 +1,56 @@
+<div class="ribbon" style="
+						    width: 960px;
+						    margin: 50px auto 0px 200px;
+						    /* margin-left: 200px; */
+						    /* margin-top: 50px; */
+						" id="fix_1">
+							<div class="ribbon-corner-left"></div>
+							<h1 class="ribbon-center" style="width: 500px; margin-bottom: 70=
+px;">Menu at a Glance</h1>
+							<div class="ribbon-corner-right"></div>
+						</div>
+						<div class="clear"></div>
+						<!-- <div class="devider"></div> -->
+						<article>
+						<div class="clear"></div>
+						<div class="ribbon">
+							<div class="ribbon-corner-left"></div>
+							<h1 class="ribbon-center" style="width: 870px">Menu</h1>
+							<div class="ribbon-corner-right"></div>
+						</div>
+						<ul id="menuCategories">
+							<li class="grid_11 alpha">
+								<p class="grid_11 alpha h">Value Meals</p>
+								<br>
+								<a href="Value Meals.html"><img src="va.JPG" a=
+lt="Value Meals"></a>
+							</li>
+							<li class="grid_11 omega" style="opacity: 0.999981494872249;">
+								<p class="grid_11 alpha h">Salads</p>
+								<a href="Salads.html"><img src="img0386.jpg" =
+width="387" height="259" alt="Salads"></a>
+							</li>
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Sides</p>
+								<a href="#"><img src="photo_076.jpg" width="350" height="234" alt="Sides"></a>
+							</li>
+							<li class="grid_11 omega">
+								<p class="grid_11 alpha h">Special Orders</p>
+								<a href="Special orders.html"><img src="churrasco.jpg" width="351" height="300" alt="Special Orders"></a>
+							</li>
+							<li class="grid_11 alpha" xm="churros.php">
+								<p class="grid_11 alpha h">Churros</p>
+								<a href="#"><img src="churros.jpg"=
+ width="350" height="271" alt="Special Orders"></a>
+							</li>
+							<li class="grid_11 omega" xm="drinks.php">
+								<p class="grid_11 alpha h">Drinks</p>
+								<a href="Drinks.html"><img src="inca.jpg" wid=
+th="300" height="300" alt="Special Orders"></a>
+							</li>
+							<li class="grid_11 omega" xm="drinks.php">
+								<p class="grid_11 alpha h"><a href="Appetizers.html" style=
+="color: rgb(176, 0, 0);">Appetizers</a><a></a></p><a>
+							</a></li><a>
+						</a></ul><a>
+						</a></article><a>

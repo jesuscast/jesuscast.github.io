@@ -1,0 +1,57 @@
+<header>
+              <div class="ribbon">
+                <div class="ribbon-corner-left"></div>
+                <h1 class="ribbon-center" style="width: 870px; ">About Us</h1>
+                <div class="ribbon-corner-right"></div>
+              </div><!--ribbon-->
+            </header>
+            <div class="clear"></div>
+            <section>
+              <div class="fadein push_3 grid_15 simplySlideshow boxOrange">
+               
+               
+               
+              <img src="slide2.jpg"><img src="slide3.jpg" style="display: none;"><img src="slide1.jpg" style="display: inline; opacity: 0.946920712075632;"></div>
+            </section>
+            <div class="clear"></div>
+            <br>
+            <div class="hr"></div>
+            <section>
+              <!--slider-->
+              <div class="pa"><!--container start-->
+                <div class="grid_6 push_2">
+                <p>
+                Latin Chicks first opened for business on September 1st. 2009 in Savannah GA. The idea for a much needed latin cuisine restaurant originated about 8 months earlier by two Armstrong students, (Mary Githens and Martin Ruiz) looking to put to use their entrepreneurial knowledge.
+                </p>
+                <br>
+                <p>
+                The knowledge of Head Chef, Miriam Sosa, and her extensive experience in international cuisine helped to design an ideal menu for an original restaurant
+                </p>
+                </div>
+                <div class="grid_6 push_2">
+                 with a little flavor from all of South America and the Caribbean, 
+in a menu simple enough to work in a fast food environment.
+                In a few words Latin Chicks is delicious restaurant food, served fa
+st and offered at fast food prices. A great, delicious, and healthier alter
+native to fast food.
+                <br>
+                <p>
+                Latin Chicks Latin Chicks offers a mix of original Latin American d
+ishes ranging from Brazilian style "Churrasco" to Cuban "Ropa Vieja," and o
+ur specialty, Peruvian style "Pollo a la Brasa" Coal fired chicken.
+                </p>
+                </div>
+                <div class="grid_6 push_2">
+                <p>
+                All main courses can be accompanied of your choice of a variety of 
+Caribbean and South American style side dishes prepared with our unique Lat
+in Chicks' recipes. Latin Chicks also specializes in "Churros" (a tradition
+al latin american pastry),
+                Empanadas filled with beef and chicken, and delicious homemade dess=
+erts.
+                </p>
+                </div>
+              </div><!--container end-->
+              <!--end slider-->
+            </section>
+            <div class"clear"></div>

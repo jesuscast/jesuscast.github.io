@@ -1,0 +1,53 @@
+<div class="ribbon">
+							<div class="ribbon-corner-left"></div>
+							<h1 class="ribbon-center" style="width: 870px">Appetizers</h1>
+							<div class="ribbon-corner-right"></div>
+						</div>
+						<div class="clear"></div>
+						<div class="devider"></div>
+						<article>
+						<ul id="menuCategories">
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Tamales Cornmeal</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Wrapped around chicken in a mild red sauce.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Papa Rellena</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Delicious stuffed potatoes filled with beef.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Empanadas</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Savory pastries filled with beef or chicken.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Stuffed Tostones</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Stuffed plantain cups filled with avocado and shrimp.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Teque=C3=B1os</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Filled dough sticks accompanied with our traditional sauces.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Bolinhos de Bacalhau</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Fried salted cod and potato fritters.
+							</li><!--Sides-->
+							<li class="grid_11 alpha" xm="sides.php">
+								<p class="grid_11 alpha h">Papa a la Huancaina</p>
+								<!-- <img src="../img/photos/images/DSC_0458.jpg" width="350" h=
+eight="234" alt="Sides"/> -->
+								Potatoes topped with a Peruvian mild cheese sauce.
+							</li><!--Sides-->
+						</ul><!--MenuCategories-->
+						</article>

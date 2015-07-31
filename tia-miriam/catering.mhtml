@@ -1,0 +1,65 @@
+<div class="ribbon">
+              <div class="ribbon-corner-left"></div>
+              <h1 class="ribbon-center" style="width: 870px">Catering Menu at 
+a Glance</h1>
+              <div class="ribbon-corner-right"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- <div class="devider"></div> -->
+            <article>
+              <div style="
+                  height: 718px;
+                  overflow: hidden;
+                  background-color: white;
+              ">
+                <img src="catering-menu.png" style="width: 50%; float:
+ left;">
+                <img src="catering-menu2.png" style="width: 49%; float
+: left;" naptha_cursor="text">
+              </div>
+              <br>
+                <div style="
+                      font-family: 'Helvetica Neue',Arial,sans-serif;
+                      font-size: 30px;
+                      float: left;
+                      font-weight: 700;
+                      margin-left: 20px;
+                      margin-top: 30px;
+                      color: rgb(26, 26, 28);
+                  ">Catering coordinator: 912-224-5796</div>
+            <!-- <ul id="menuCategories">
+              <li class="grid_11 alpha">
+                <p class="grid_11 alpha h">Value Meals</p>
+                <br />
+                <a href="valueMeals.php"><img src="../img/photos/va.JPG" alt=
+"Value Meals" /></a>
+              </li>
+              <li class="grid_11 omega">
+                <p class="grid_11 alpha h">Salads</p>
+                <a href="salads.php"><img src="../img/photos/img0386.jpg" width
+="387" height="259" alt="Salads"/></a>
+              </li>
+              <li class="grid_11 alpha" xm="sides.php">
+                <p class="grid_11 alpha h">Sides</p>
+                <a href="sides.php"><img src="../img/photos/miniimports/photo_0
+76.jpg" width="350" height="234" alt="Sides"/></a>
+              </li>
+              <li class="grid_11 omega">
+                <p class="grid_11 alpha h">Special Orders</p>
+                <a href="specialOrders.php"><img src="../img/photos/churrasco.j
+pg" width="351" height="300" alt="Special Orders" /></a>
+              </li>
+              <li class="grid_11 alpha" xm="churros.php">
+                <p class="grid_11 alpha h">Churros</p>
+                <a href="churros.php"><img src="../img/photos/churros.jpg" widt
+h="350" height="271" alt="Special Orders" /></a>
+              </li>
+              <li class="grid_11 omega" xm="drinks.php">
+                <p class="grid_11 alpha h">Drinks</p>
+                <a href="drinks.php"><img src="../img/photos/inca.jpg" width="300" height="300" alt="Special Orders" /></a>
+              </li>
+              <li class="grid_11 omega" xm="drinks.php">
+                <p class="grid_11 alpha h"><a href="appetizers.php" style="color: rgb(176, 0, 0);">Appetizers<a/></p>
+              </li>
+            </ul> -->
+            </article>

@@ -1,0 +1,47 @@
+<div class="ribbon">
+              <div class="ribbon-corner-left"></div>
+              <h1 class="ribbon-center" style="width: 870px">Value Meals</h1>
+              <div class="ribbon-corner-right"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="devider"></div>
+            <article>
+            <ul id="menuCategories">
+              <li class="grid_11 alpha">
+                <p class="grid_11 alpha h">Combo #1</p>
+                <br>
+                <img src="va.JPG" alt="Value Meals">
+                <p class="grid_11 omega black"> Chicken with fries or salad=
+</p>
+              </li><!--Value Meals-->
+              <li class="grid_11 omega">
+                <p class="grid_11 alpha h">Combo #2</p>
+                <img src="5411 92_2 (Copiar).jpg" width="=
+387" height="259" alt="Salads">
+                <p class="grid_11 omega black"> Chicken with choice of 2 si=
+des</p>
+              </li><!--Salads-->
+              <li class="grid_11 alpha" xm="churros.php">
+                <p class="grid_11 alpha h">Ropa Vieja</p>
+                <img src="5274 34more (Copiar).jpg" width=
+="350" height="271" alt="Special Orders">
+                <p class="grid_11 omega black">Shredded beef with tomato sauce &a=
+mp; vegetables with choice of 2 sides.</p>
+              </li><!--Churros-->
+              <li class="grid_11 alpha" xm="sides.php">
+                <p class="grid_11 alpha h">Combo #3</p>
+                <p class="grid_11 omega black">Chicken with choice of 2 si=
+des</p>
+              </li><!--Sides-->
+              <li class="grid_11 omega">
+                <p class="grid_11 alpha h">Family Meal (serves 3-4)</p>
+                <p class="grid_11 omega black">Whole Chicken with choice of 4 sid=
+es + 2 filled churros</p>
+              </li><!--Special Orders-->
+              <li class="grid_11 omega" xm="drinks.php">
+                <p class="grid_11 alpha h">Saltado de pollo</p>
+                <p class="grid_11 omega black">Saute chicken strips in a wine bas=
+e with choice of 2 sides.</p>
+              </li><!--drinks-->
+            </ul><!--MenuCategories-->
+            </article>

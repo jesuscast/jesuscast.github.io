@@ -1,0 +1,11 @@
+<div class="ribbon">
+              <div class="ribbon-corner-left"></div>
+              <h1 class="ribbon-center" style="width: 870px">Contact</h1>
+              <div class="ribbon-corner-right"></div>
+            </div>
+            <div class="clear"></div>
+            <article>
+              <div class="el1" id="ela"><img src="facebook_32.png"><p>FACEBOOK:</p><a href="http://web.archive.org/web/20140106223206/https://www.facebook.com/pages/latin-Chicks/177199604889">Click here!</a></div>
+              <div class="el1" id="elb"><img src="email.png"><p>EMAIL:</p><a href="mailto:latinchicks@gmail.com">latinchicks@gmail.com</a></div>
+              <div class="el1" id="elc"><img src="phone.png"><p>For franchising info call Martin Ruiz at </p><a>(843) 684-7373</a></div>
+            </article>

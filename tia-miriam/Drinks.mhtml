@@ -1,0 +1,37 @@
+<div class="ribbon">
+              <div class="ribbon-corner-left"></div>
+              <h1 class="ribbon-center" style="width: 870px">Drinks</h1>
+              <div class="ribbon-corner-right"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="devider"></div>
+            <article>
+            <ul id="menuCategories">
+              <li class="grid_11 alpha">
+                <p class="grid_11 alpha h">Soft drinks &amp; Iced Tea</p>
+                <br>
+                <img src="soft_drinks.jpg" alt="Value Meals">
+              </li><!--Value Meals-->
+              <li class="grid_11 omega">
+                <p class="grid_11 alpha h">Horchata</p>
+                <img src="horchata.jpg" width="300" height==
+"300" alt="Salads">
+              </li><!--Salads-->
+              <li class="grid_11 alpha" xm="sides.php">
+                <p class="grid_11 alpha h">Malta India</p>
+                <img src="malta-india.jpg" width="300" height=
+="300" alt="Sides">
+              </li><!--Sides-->
+              <li class="grid_11 alpha" xm="churros.php">
+                <p class="grid_11 alpha h">Imported canned drinks</p>
+                <img src="inca.jpg" width="300" height="300=
+" alt="Special Orders">
+              </li><!--Churros-->
+              <li class="grid_11 omega" xm="drinks.php">
+                <p class="grid_11 alpha h">
+                </p><p class="grid_11 alpha h">Passion Fruit Juice (Maracuya)</p>
+                <img src="foto255.jpg" width="250" height="=
+250" alt="Special Orders">
+              </li><!--Special Orders-->
+            </ul><!--MenuCategories-->
+            </article>
