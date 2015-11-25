@@ -1,1 +1,62 @@
-Hello World
+<! DOCTYPE html>
+<html>
+
+<head>
+    <title> JESUS </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/JavaScript" src="scripts/jquery-2.1.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/prism.css" />
+    <script type="text/JavaScript" src="scripts/prism.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 content">
+                <div id="header">
+                    <h1>SCRAPTOR</h1>
+                    <br />
+                    <img src="images/Velociraptor-detail-header-two.png" class="raptor-image" />
+                </div>
+
+                <div id="content">
+                    <div class="col-md-6 section">
+                        <span class="title">What is Scraptor?</span>
+                        <br />
+                        <p>Scraptor is scrapping framework in development for python. Contrary to other scrapping framworks that enforce a file structure, scraptor simplifies boilerplate code while leaving up to the developer a lot of implementation freedom. Check out how to scrape twitter moment's in 7 lines of code!</p>
+                    </div>
+                    <div class="col-md-6 section">
+                        <div class="code">
+                            <pre>
+<code class="language-python">
+	from scraptor import *
+	@field(".MomentCapsuleDetails-title", name="title")
+	def y(x):   return x
+	@field(".MomentMediaItem-entity--image", name="imagesURL", attr = "src")
+	def y(x):   return x
+	run(url = "https://twitter.com/i/moments", nodeOfType = ".MomentCapsuleSummary")
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

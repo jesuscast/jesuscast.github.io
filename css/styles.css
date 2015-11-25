@@ -1,0 +1,44 @@
+.raptor-image {
+	margin: 0px auto 0px auto;
+}
+.content {
+	text-align: center;
+}
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 100px;
+    color: #EA8787;
+    letter-spacing: 9px;
+}
+body {
+	/*// background: #4E0303; //*/
+	background-image:  url("../images/noisy-texture-100x100-o5-d10-c-4E0303-t0.png");
+}
+.code {
+	font-size: 1.2em;
+}
+code {
+	font-size: 1.3em !important;
+}
+
+span.title {
+	font-size: 30px;
+    color: #A79292;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 10px 0px 0px 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 0px 0px 40px;
+	text-align: justify;
+	color: #A79292;
+	font-size: 1.3em;
+}
+
+.section {
+	margin-top: 30px;
+}
