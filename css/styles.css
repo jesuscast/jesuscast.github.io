@@ -1,5 +1,7 @@
 .raptor-image {
 	margin: 0px auto 0px auto;
+	max-width: 1043px;
+	width: 90%;
 }
 .content {
 	text-align: center;
