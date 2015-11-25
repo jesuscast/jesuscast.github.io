@@ -42,6 +42,10 @@ p {
 .section {
 	margin-top: 30px;
 }
+.section a {
+	color: #A79292 !important;
+	text-shadow: 1px 1px 1px #000;
+}
 
 footer {
 	font-family: 'Open Sans', sans-serif;
