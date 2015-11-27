@@ -1,0 +1,3734 @@
+<link href='http://fonts.googleapis.com/css?family=Oswald%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%7CNoto+Sans%3A400%2C700%7CRoboto+Slab%3A400%2C100%2C300%2C700%7COpen+Sans%3A300%2C400%2C500%2C700&#038;ver=4.1.4' type='text/css' media='all' />
+<meta charset="UTF-8">
+<style type="text/css">
+.globe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -372px;
+    margin-left: -372.5px;
+    z-index: 0;
+    width: 745px;
+    height: 744px;
+    background-image: url(" https://d1b56fou7djks0.cloudfront.net/img/globe.png?v=1448571173720");
+    -webkit-animation-name: rotating;
+    animation-name: rotating;
+    -webkit-animation-duration: 100s;
+    animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes mapPinEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mapPinEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes tick {
+  0%, 100% {
+    background-color: rgba(255,190,16,0);
+  }
+
+  50% {
+    background-color: rgba(255,190,16,.2);
+  }
+}
+
+@keyframes tick {
+  0%, 100% {
+    background-color: rgba(255,190,16,0);
+  }
+
+  50% {
+    background-color: rgba(255,190,16,.2);
+  }
+}
+
+@-webkit-keyframes tick-up {
+  0%, 100% {
+    background-color: rgba(27,198,124,0);
+  }
+
+  50% {
+    background-color: rgba(27,198,124,.2);
+  }
+}
+
+@keyframes tick-up {
+  0%, 100% {
+    background-color: rgba(27,198,124,0);
+  }
+
+  50% {
+    background-color: rgba(27,198,124,.2);
+  }
+}
+
+@-webkit-keyframes tick-down {
+  0%, 100% {
+    background-color: rgba(232,86,86,0);
+  }
+
+  50% {
+    background-color: rgba(232,86,86,.2);
+  }
+}
+
+@keyframes tick-down {
+  0%, 100% {
+    background-color: rgba(232,86,86,0);
+  }
+
+  50% {
+    background-color: rgba(232,86,86,.2);
+  }
+}
+
+</style>
+<style type='text/css'>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase
+}
+.main-menu a,
+.post-tags li a,
+.tags-list li a,
+a {
+    text-decoration: none
+}
+.flex-container a:flex-active,
+.flex-container a:focus,
+.flexslider a:flex-active,
+.flexslider a:focus,
+a,
+a:focus,
+a:hover,
+a:visited {
+    outline: 0
+}
+.clear,
+.clearfix:after,
+.row:after,
+.slides:after,
+hr {
+    clear: both
+}
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0
+}
+.container .column,
+.container .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px
+}
+.row {
+    margin-bottom: 20px
+}
+.column.alpha,
+.columns.alpha {
+    margin-left: 0
+}
+.column.omega,
+.columns.omega {
+    margin-right: 0
+}
+.container .one.column,
+.container .one.columns {
+    width: 40px
+}
+.container .two.columns {
+    width: 100px
+}
+.container .three.columns {
+    width: 160px
+}
+.container .four.columns {
+    width: 220px
+}
+.container .five.columns {
+    width: 280px
+}
+.container .six.columns {
+    width: 340px
+}
+.container .seven.columns {
+    width: 400px
+}
+.container .eight.columns {
+    width: 460px
+}
+.container .nine.columns {
+    width: 520px
+}
+.container .ten.columns {
+    width: 580px
+}
+.container .eleven.columns {
+    width: 640px
+}
+.container .twelve.columns {
+    width: 700px
+}
+.container .thirteen.columns {
+    width: 760px
+}
+.container .fourteen.columns {
+    width: 820px
+}
+.container .fifteen.columns {
+    width: 880px
+}
+.container .sixteen.columns {
+    width: 940px
+}
+.container .one-third.column {
+    width: 300px
+}
+.container .two-thirds.column {
+    width: 620px
+}
+.container .offset-by-one {
+    padding-left: 60px
+}
+.container .offset-by-two {
+    padding-left: 120px
+}
+.container .offset-by-three {
+    padding-left: 180px
+}
+.container .offset-by-four {
+    padding-left: 240px
+}
+.container .offset-by-five {
+    padding-left: 300px
+}
+.container .offset-by-six {
+    padding-left: 360px
+}
+.container .offset-by-seven {
+    padding-left: 420px
+}
+.container .offset-by-eight {
+    padding-left: 480px
+}
+.container .offset-by-nine {
+    padding-left: 540px
+}
+.container .offset-by-ten {
+    padding-left: 600px
+}
+.container .offset-by-eleven {
+    padding-left: 660px
+}
+.container .offset-by-twelve {
+    padding-left: 720px
+}
+.container .offset-by-thirteen {
+    padding-left: 780px
+}
+.container .offset-by-fourteen {
+    padding-left: 840px
+}
+.container .offset-by-fifteen {
+    padding-left: 900px
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px
+    }
+    .container .column,
+    .container .columns {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    .column.alpha,
+    .columns.alpha {
+        margin-left: 0;
+        margin-right: 10px
+    }
+    .column.omega,
+    .columns.omega {
+        margin-right: 0;
+        margin-left: 10px
+    }
+    .alpha.omega {
+        margin-left: 0;
+        margin-right: 0
+    }
+    .container .one.column,
+    .container .one.columns {
+        width: 28px
+    }
+    .container .two.columns {
+        width: 76px
+    }
+    .container .three.columns {
+        width: 124px
+    }
+    .container .four.columns {
+        width: 172px
+    }
+    .container .five.columns {
+        width: 220px
+    }
+    .container .six.columns {
+        width: 268px
+    }
+    .container .seven.columns {
+        width: 316px
+    }
+    .container .eight.columns {
+        width: 364px
+    }
+    .container .nine.columns {
+        width: 412px
+    }
+    .container .ten.columns {
+        width: 460px
+    }
+    .container .eleven.columns {
+        width: 508px
+    }
+    .container .twelve.columns {
+        width: 556px
+    }
+    .container .thirteen.columns {
+        width: 604px
+    }
+    .container .fourteen.columns {
+        width: 652px
+    }
+    .container .fifteen.columns {
+        width: 700px
+    }
+    .container .sixteen.columns {
+        width: 748px
+    }
+    .container .one-third.column {
+        width: 236px
+    }
+    .container .two-thirds.column {
+        width: 492px
+    }
+    .container .offset-by-one {
+        padding-left: 48px
+    }
+    .container .offset-by-two {
+        padding-left: 96px
+    }
+    .container .offset-by-three {
+        padding-left: 144px
+    }
+    .container .offset-by-four {
+        padding-left: 192px
+    }
+    .container .offset-by-five {
+        padding-left: 240px
+    }
+    .container .offset-by-six {
+        padding-left: 288px
+    }
+    .container .offset-by-seven {
+        padding-left: 336px
+    }
+    .container .offset-by-eight {
+        padding-left: 384px
+    }
+    .container .offset-by-nine {
+        padding-left: 432px
+    }
+    .container .offset-by-ten {
+        padding-left: 480px
+    }
+    .container .offset-by-eleven {
+        padding-left: 528px
+    }
+    .container .offset-by-twelve {
+        padding-left: 576px
+    }
+    .container .offset-by-thirteen {
+        padding-left: 624px
+    }
+    .container .offset-by-fourteen {
+        padding-left: 672px
+    }
+    .container .offset-by-fifteen {
+        padding-left: 720px
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container,
+    .container .eight.columns,
+    .container .eleven.columns,
+    .container .fifteen.columns,
+    .container .five.columns,
+    .container .four.columns,
+    .container .fourteen.columns,
+    .container .nine.columns,
+    .container .one-third.column,
+    .container .one.column,
+    .container .one.columns,
+    .container .seven.columns,
+    .container .six.columns,
+    .container .sixteen.columns,
+    .container .ten.columns,
+    .container .thirteen.columns,
+    .container .three.columns,
+    .container .twelve.columns,
+    .container .two-thirds.column,
+    .container .two.columns {
+        width: 300px
+    }
+    .container .column,
+    .container .columns {
+        margin: 0
+    }
+    .container .offset-by-eight,
+    .container .offset-by-eleven,
+    .container .offset-by-fifteen,
+    .container .offset-by-five,
+    .container .offset-by-four,
+    .container .offset-by-fourteen,
+    .container .offset-by-nine,
+    .container .offset-by-one,
+    .container .offset-by-seven,
+    .container .offset-by-six,
+    .container .offset-by-ten,
+    .container .offset-by-thirteen,
+    .container .offset-by-three,
+    .container .offset-by-twelve,
+    .container .offset-by-two {
+        padding-left: 0
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container,
+    .container .eight.columns,
+    .container .eleven.columns,
+    .container .fifteen.columns,
+    .container .five.columns,
+    .container .four.columns,
+    .container .fourteen.columns,
+    .container .nine.columns,
+    .container .one-third.column,
+    .container .one.column,
+    .container .one.columns,
+    .container .seven.columns,
+    .container .six.columns,
+    .container .sixteen.columns,
+    .container .ten.columns,
+    .container .thirteen.columns,
+    .container .three.columns,
+    .container .twelve.columns,
+    .container .two-thirds.column,
+    .container .two.columns {
+        width: 420px
+    }
+    .container .column,
+    .container .columns {
+        margin: 0
+    }
+}
+.clear,
+.clearfix:after,
+.clearfix:before,
+.row:after,
+.row:before {
+    visibility: hidden;
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0
+}
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.clearfix:after,
+.clearfix:before,
+.row:after,
+.row:before {
+    content: '\0020'
+}
+.clearfix,
+.row {
+    zoom: 1
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800);
+body,
+html {
+    height: 100%
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+#qLpercentage,
+h1,
+h2,
+h3 {
+    font-family: BebasNeueRegular, sans-serif
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+body {
+    line-height: 1.5;
+    background: #fff;
+    font: 13px/1.5 HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #515A5F;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden
+}
+.client-info,
+.quote-author,
+em {
+    font-style: italic
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url(/fonts/BebasNeue-webfont.eot);
+    src: url(/fonts/BebasNeue-webfont-.eot#iefix) format('embedded-opentype'), url(/fonts/BebasNeue-webfont.woff) format('woff'), url(/fonts/BebasNeue-webfont.ttf) format('truetype'), url(/fonts/BebasNeue-webfont.svg#BebasNeueRegular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+::-moz-selection {
+    background: #d3af44;
+    color: #fff
+}
+::selection {
+    background: #d3af44;
+    color: #fff
+}
+.highlight,
+a {
+    color: #d3af44
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden
+}
+.embed-container embed,
+.embed-container iframe,
+.embed-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+img,
+img.responsive,
+pre {
+    height: auto
+}
+img.responsive {
+    width: 100%
+}
+strong {
+    font-weight: 700
+}
+small {
+    font-size: 80%
+}
+hr {
+    border: solid #eee;
+    border-width: 1px 0 0;
+    margin: 10px 0 30px;
+    height: 0
+}
+pre {
+    font-family: Consolas, monospace;
+    border: 1px solid #f0f0f0;
+    background: #fafafa;
+    padding: 10px 20px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin: 0 0 20px;
+    overflow-x: auto
+}
+.hidden {
+    display: none!important
+}
+.responsive embed,
+.responsive iframe,
+.responsive img,
+.responsive object {
+    width: 100%;
+    height: auto
+}
+img {
+    max-width: 100%
+}
+a {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+a:focus,
+a:hover {
+    color: #666
+}
+a:focus {
+    outline-offset: 0
+}
+p a,
+p a:visited {
+    line-height: inherit
+}
+ul {
+    list-style: none
+}
+ul.styled-list {
+    padding: 0
+}
+ol,
+ul {
+    margin: 0;
+    padding: 0 0 0 30px
+}
+ol {
+    list-style: decimal
+}
+ol li ol,
+ol li ul,
+ul li ul {
+    margin-bottom: 0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 10px
+}
+.left {
+    float: left
+}
+.right {
+    float: right
+}
+.alignleft {
+    text-align: left
+}
+.alignright {
+    text-align: right
+}
+.aligncenter {
+    text-align: center;
+    display: block
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400
+}
+body #load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1001;
+    background-color: #fff
+}
+h1,
+h2,
+nav,
+p.lead {
+    position: relative
+}
+#qLpercentage {
+    font-size: 60px!important;
+    line-height: 1
+}
+h4,
+h5,
+h6 {
+    font-family: Oswald, sans-serif
+}
+h1 {
+    font-size: 80px;
+    margin-bottom: 0
+}
+h2 {
+    font-size: 44px
+}
+h3 {
+    font-size: 30px
+}
+h4 {
+    font-size: 22px
+}
+h5 {
+    font-size: 20px
+}
+h6 {
+    font-size: 108px
+}
+p.lead {
+    font-family: 'Open Sans', "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+    font-weight: 600
+}
+.home-slide .home-slide-content,
+.main-menu a,
+.twitter-author,
+p.quote {
+    text-transform: uppercase;
+    font-family: BebasNeueRegular, sans-serif
+}
+nav {
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+body.multipage nav {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+nav.dark {
+    background: #151515;
+    border-bottom: 1px solid #000
+}
+nav.light {
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .07);
+    border-bottom: 1px solid #f0f0f0;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+nav.light.sticky {
+    background: #fff;
+    background: rgba(255, 255, 255, .95)
+}
+nav.transparent {
+    background: 0 0;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    position: fixed;
+    width: 100%;
+    top: 0
+}
+nav.transparent a {
+    color: #fff
+}
+nav.transparent.scroll {
+    background: #fff;
+    background: rgba(255, 255, 255, .95)
+}
+nav.transparent.scroll a {
+    color: #515A5F
+}
+nav .container .four.columns {
+    float: left;
+    width: auto
+}
+nav .container .twelve.columns {
+    float: right;
+    width: auto
+}
+.logo,
+.main-menu {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle
+}
+.logo.large,
+.main-menu.large {
+    height: 80px
+}
+.logo a {
+    display: block;
+    margin: auto
+}
+.main-menu li {
+    display: inline;
+    margin-left: 30px
+}
+.main-menu a {
+    font-size: 22px;
+    color: #fff
+}
+nav.light .main-menu a {
+    color: inherit
+}
+nav.dark .main-menu a:hover,
+nav.light .main-menu a:hover {
+    color: #d3af44;
+    transition: color .5s;
+    -moz-transition: color .5s;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s
+}
+nav.dark .main-menu li.active a,
+nav.light .main-menu li.active a {
+    color: #d3af44
+}
+.main-menu a i {
+    margin-right: 3px;
+    font-size: 22px
+}
+.main-menu.iconic li {
+    margin-left: 40px
+}
+.main-menu.iconic a {
+    display: inline-block
+}
+.main-menu.iconic a i {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin: 8px auto 4px
+}
+.selectnav {
+    display: none
+}
+.home-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto
+}
+.home1 .slabtextdone {
+    color: #fff
+}
+.home1 .slabtextdone .slabtext.second-child {
+    background: #d3af44;
+    padding: 15px 10px 0;
+    display: inline-block;
+    width: auto;
+    margin-left: -10px;
+    color: #000;
+    margin-bottom: 10px
+}
+.home1.home-gradient .slabtextdone .slabtext.second-child {
+    background: 0 0
+}
+.home-slide .home-slide-content {
+    font-size: 90px;
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1
+}
+.home-parallax .home-slide-content {
+    padding: 55px 10px 50px;
+    background: rgba(0, 0, 0, .3);
+    -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    color: #fff
+}
+.home-gradient .home-slide-content {
+    color: #fff
+}
+.home-gradient .highlight {
+    color: inherit
+}
+.home3 .home-text-wrapper .container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .81);
+    text-align: center;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .24);
+    overflow: hidden
+}
+.home3 .home-text-wrapper .container.no-safari {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+.home3 .home-quote {
+    transition: all .3s ease-in-out;
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+    text-align: center;
+    width: inherit;
+    overflow: hidden;
+    color: #fff
+}
+.home3 .home-quote,
+.home4 .home-quote {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out
+}
+.home3 .slabtextdone {
+    color: #fff
+}
+.home3 .slabtextdone .slabtext.second-child {
+    display: inline-block;
+    width: auto;
+    color: #d3af44;
+    text-shadow: none;
+    overflow: hidden
+}
+.home3 .home-text-wrapper .container:hover {
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, .24);
+    -webkit-transform-style: preserve-3d;
+    overflow: hidden
+}
+.home3#home h1 {
+    font-size: 30px;
+    overflow: hidden;
+    margin: 0 50px
+}
+.home4 .slabtextdone {
+    text-shadow: none
+}
+.home4 .home-quote {
+    padding: 10px 10px 0;
+    background: rgba(255, 255, 255, .63);
+    -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .32);
+    transition: all .3s ease-in-out
+}
+.home4.home-gradient .home-quote {
+    background: #fff
+}
+.home4 .home-quote:hover {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, .32)
+}
+.home4 .slabtextdone .slabtext.second-child {
+    background: #d3af44;
+    padding: 15px 10px 0;
+    display: inline-block;
+    width: auto;
+    margin-left: -10px;
+    color: #fff
+}
+#home.home-fullscreenslider {
+    background: url(images/pattern.png);
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+#home.home-fullscreenslider .container {
+    height: 100%
+}
+.parallax,
+.parallax .overlay,
+.parallax .parallax-content {
+    height: 650px !important;
+}
+.parallax {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #f8f8f8;
+    color: #fff;
+    z-index: 0
+}
+.quote-author,
+p.quote {
+    text-align: center;
+    z-index: 200
+}
+.overlay,
+.parallax-bg {
+    width: 100%;
+    position: absolute
+}
+.parallax .container {
+    display: table;
+    overflow: hidden
+}
+.parallax-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden
+}
+.overlay {
+    background: url(images/pattern.png);
+    overflow: hidden
+}
+.parallax-bg {
+    height: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: top center
+}
+.color-block,
+.page,
+.quote-author,
+.subtitle {
+    position: relative
+}
+.bg1 {
+    background-image: url(images/parallax/parallax1.jpg)
+}
+p.quote {
+    font-size: 27px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 5%
+}
+.quote i {
+    font-size: 25px;
+    display: inline-table;
+    vertical-align: top;
+    margin: 0 5px
+}
+.parallax .quote i {
+    color: #d3af44
+}
+.quote-author {
+    height: 24px;
+    width: auto;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 25px
+}
+.bg2 {
+   /* background-image: url(images/parallax/parallax2.jpg)*/
+   background-color: #252e33;
+}
+.twitter-slider {
+    width: 85%;
+    margin: 0 auto!important
+}
+#twitter-feed {
+    text-align: center;
+    padding: 10px 0
+}
+#twitter-feed li {
+    margin-bottom: 20px
+}
+.twitter-feed-icon i {
+    font-size: 22px;
+    width: 23px;
+    color: #fff;
+    display: inline-block;
+    padding: 17px;
+    background: #d3af44;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff
+}
+.twitter-author {
+    font-size: 25px
+}
+#twitter-feed ul.slides>li {
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4;
+    margin: 5px auto 30px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+.twitter#twitter-feed {
+    text-align: left
+}
+.twitter ul {
+    padding: 0
+}
+.twitter .twitter-author,
+.twitter .twitter-feed-icon i {
+    display: none
+}
+.twitter li {
+    font-family: 'HelveticaNeue Light', sans-serif;
+    font-size: 13px;
+    color: inherit;
+    width: auto;
+    line-height: inherit;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none
+}
+.bg3 {
+    background-image: url(images/parallax/parallax3.jpg)
+}
+.testimonial-slider {
+    position: relative;
+    width: 85%;
+    margin: 0 auto!important
+}
+.testimonial-slider ul {
+    text-align: center;
+    padding: 10px 0
+}
+.testimonial-icon i {
+    font-size: 22px;
+    width: 23px;
+    color: #fff;
+    display: inline-block;
+    padding: 17px;
+    background: #d3af44;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff
+}
+.testimonial-slide .client-testimonial {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.67;
+    margin: 5px auto 10px;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+.client-info {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+#filters ul li a,
+.project-details p span,
+.subtitle {
+    font-weight: 700
+}
+.client-info:after,
+.client-info:before {
+    content: '--';
+    margin: 0 3px
+}
+.bg4 {
+    background-image: url(images/parallax/parallax4.jpg)
+}
+.color-block {
+    width: 100%;
+    height: 450px;
+    background: -moz-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -webkit-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -o-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -ms-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    overflow: hidden;
+    color: #fff
+}
+.color-block .parallax-bg {
+    display: none
+}
+.color-block .container {
+    display: table
+}
+.color-block-content {
+    height: 450px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+.color-block .client-info,
+.color-block .quote i,
+.color-block .quote-author,
+.color-block .testimonial-slider .title span,
+.color-block .twitter-author a,
+.color-block .twitter-date a,
+.color-block a {
+    color: #000
+}
+.page {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+    z-index: 6;
+    overflow: hidden
+}
+.page.multipage {
+    text-align: left;
+    padding: 30px 0 0
+}
+.page.multipage .copyright,
+.title {
+    text-align: center
+}
+#team.page {
+    position: static
+}
+.title h1 {
+    margin-bottom: 20px;
+    line-height: .8;
+    display: inline-block;
+    padding: 10px 10px 3px;
+    background: #d3af44;
+    color: #fff;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 3px #d3af44
+}
+.multipage .title h1 {
+    margin: 60px 0 40px;
+    line-height: .8
+}
+.subtitle {
+    font-family: 'Open Sans', "Times New Roman", Times, serif;
+    font-size: 25px;
+    line-height: 1.2;
+    padding: 0;
+    margin-bottom: 40px;
+    z-index: 1;
+    text-transform: uppercase
+}
+#filters,
+.home-logo-text a {
+    text-align: center;
+    margin-bottom: 0;
+    position: relative
+}
+#home {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: table;
+    color: #010101;
+    z-index: 10
+}
+.home-gradient {
+    background: -moz-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -webkit-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -o-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: -ms-radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%);
+    background: radial-gradient(center center, circle cover, #d3af44 0, #E2BE01 100%)
+}
+.home-parallax {
+    background: url(images/parallax/parallax4.jpg) center top fixed #d3af44;
+    background-size: cover
+}
+#home h1 {
+    font-size: 60px
+}
+.home-logo,
+.home-logo-text {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%
+}
+.home-logo-text a {
+    font-family: BebasNeueRegular, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 5px 25px 0;
+    color: inherit
+}
+.home-logo-text.light a {
+    color: rgba(255, 255, 255, .9)
+}
+.home-logo-text a:hover {
+    color: #fff
+}
+.slabtextdone {
+    line-height: .8;
+    color: #020202;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, .4)
+}
+.slabtexted .slabtext {
+    display: -moz-inline-box;
+    display: inline-block;
+    white-space: nowrap
+}
+.slabtextinactive .slabtext {
+    display: inline;
+    white-space: normal;
+    font-size: 1em!important;
+    letter-spacing: inherit!important;
+    word-spacing: inherit!important
+}
+#filters,
+.slabtextdone .slabtext {
+    display: block
+}
+#portfolio {
+    padding-bottom: 0
+}
+#filters {
+    margin-top: 10px;
+    float: none;
+    z-index: 2
+}
+#closeProject,
+#project-navigation {
+    position: absolute;
+    top: 10px;
+    z-index: 1
+}
+#filters ul {
+    margin: 0;
+    list-style: none;
+    padding: 0
+}
+#filters ul li {
+    display: inline-block
+}
+#filters ul li a {
+    display: block;
+    float: left;
+    padding: 2px 5px;
+    color: inherit;
+    margin-right: 5px;
+    margin-bottom: 5px
+}
+#filters ul li a h3 {
+    font-size: 18px;
+    padding: 2px 6px 0;
+    border: 2px solid
+}
+#filters ul li a.active h3,
+#filters ul li a:hover h3 {
+    color: #d3af44
+}
+#project-navigation {
+    width: 100%;
+    height: 40px;
+    left: 0;
+    margin: 0
+}
+#project-navigation ul {
+    float: none;
+    margin: 0;
+    list-style: none;
+    display: none;
+    padding: 0
+}
+.project-description,
+.project-details,
+.project-info,
+.project-media {
+    margin-bottom: 30px
+}
+#project-navigation ul li#prevProject a {
+    background: url(images/arrow_left.png) center center no-repeat;
+    float: right;
+    margin-right: 64px
+}
+#project-navigation ul li#nextProject a {
+    background: url(images/arrow_right.png) center center no-repeat;
+    float: right;
+    margin-right: 10px
+}
+#project-navigation ul li#nextProject a,
+#project-navigation ul li#prevProject a {
+    background-color: #151515;
+    background-size: 30px
+}
+#project-navigation ul li a {
+    float: left;
+    border-radius: 3px;
+    transition: all .3s ease-in-out
+}
+#project-navigation ul li a,
+.portfolio .portfolio-overlay {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out
+}
+#closeProject a,
+#project-navigation ul li a {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px
+}
+#project-navigation ul li a:hover,
+#project-navigation ul li#nextProject a:hover,
+#project-navigation ul li#prevProject a:hover {
+    background-color: #d3af44
+}
+#project-navigation ul li a.disabled,
+#project-navigation ul li a.disabled:hover {
+    cursor: default;
+    background-color: rgba(0, 0, 0, .2)!important
+}
+#closeProject {
+    right: 62px
+}
+#closeProject a {
+    position: absolute;
+    right: 0;
+    display: none;
+    background: #151515;
+    text-align: center;
+    border-radius: 3px
+}
+#closeProject a:hover {
+    background: #d3af44
+}
+#closeProject a i {
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    display: inline-table;
+    vertical-align: middle
+}
+#ajax-section {
+    position: relative;
+    padding: 0;
+    background: #f8f8f8;
+    text-align: left
+}
+#ajax-section #loader {
+    width: 100%;
+    height: 20px;
+    display: none;
+    position: absolute;
+    top: -30px
+}
+#ajax-section #loader.projectError {
+    text-align: center;
+    height: auto!important;
+    background-position: top center
+}
+#ajax-section #loader.projectError p {
+    display: none;
+    padding-top: 16px;
+    color: #666!important
+}
+#ajax-section #loader {
+    background: url(images/loader.gif) center center no-repeat
+}
+#ajax-content-outer {
+    width: 100%;
+    overflow: hidden;
+    position: relative
+}
+#ajax-content-inner {
+    float: left;
+    height: 0;
+    opacity: 0
+}
+#ajaxpage {
+    float: left;
+    display: block
+}
+.project-media {
+    margin-top: 70px;
+    overflow: hidden;
+    display: block
+}
+.project-info {
+    margin-top: 60px;
+    height: auto;
+    float: left
+}
+.project-description h3,
+.project-details h3 {
+    margin-bottom: 10px
+}
+.project-details p {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 7px
+}
+#portfolio-wrap {
+    position: relative;
+    padding: 0;
+    width: 100.1%;
+    margin: 0 auto;
+    display: block
+}
+#portfolio-wrap .one-third {
+    margin: 0;
+    overflow: hidden;
+    line-height: 0;
+    width: 20%;
+    padding: 0
+}
+.post-title,
+.widget-title {
+    text-transform: uppercase;
+    font-family: BebasNeueRegular, sans-serif;
+    line-height: 1
+}
+.portfolio-item.current {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .37);
+    z-index: 101
+}
+.portfolio-item {
+    padding: 0;
+    position: relative;
+    overflow: hidden
+}
+.portfolio-item .portfolio-image {
+    overflow: hidden;
+    display: block;
+    position: relative
+}
+.portfolio-item .portfolio-image img {
+    width: 100%;
+    height: auto
+}
+.portfolio .portfolio-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    z-index: 4;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease-in-out;
+    background: #d3af44
+}
+.portfolio>a,
+.portfolio>a:hover {
+    color: #fff
+}
+.portfolio-item .portfolio>a:hover>.portfolio-overlay {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100)
+}
+.portfolio>a img,
+.portfolio>a:hover img {
+    transition: all .3s ease-in-out
+}
+.portfolio .thumb-info,
+.portfolio>a img,
+.portfolio>a:hover img {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out
+}
+.portfolio .thumb-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease-in-out
+}
+.portfolio a:hover .portfolio-overlay .thumb-info {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100)
+}
+.portfolio-overlay .thumb-info i {
+    top: 58%;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: block
+}
+.portfolio-overlay .thumb-info h3 {
+    top: 38%;
+    font-size: 30px;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    text-align: center
+}
+.portfolio-overlay .thumb-info p {
+    top: 50%;
+    font-size: 13px;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-weight: 700
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: .8s;
+    -moz-transition-duration: .8s;
+    -ms-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity
+}
+.isotope .isotope-item.no-transition,
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s
+}
+.post {
+    margin-bottom: 100px
+}
+.post-media {
+    margin-bottom: 30px
+}
+.post-title {
+    font-size: 36px;
+    margin-bottom: 10px
+}
+.post-title a {
+    color: #151515
+}
+.post-title a:hover {
+    color: #d3af44
+}
+.post-tags {
+    margin-top: 20px
+}
+.post-tags i {
+    display: inline-table;
+    margin-right: 4px;
+    color: #868991;
+    font-size: 16px;
+    vertical-align: middle
+}
+.post-tags li,
+.post-tags ul,
+.tags-list li {
+    display: inline-block
+}
+.post-tags ul {
+    padding: 0
+}
+.post-tags li {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px
+}
+.post-tags li:after {
+    content: ' . '
+}
+.post-tags li:last-child:after {
+    content: ''
+}
+.post-tags li a {
+    color: #868991
+}
+.post-tags li a:hover {
+    color: #d3af44
+}
+.post-meta {
+    margin-bottom: 20px;
+    padding: 5px 0;
+    border-top: 1px solid #f0f2f5;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 11px
+}
+.post-meta span {
+    text-align: right;
+    float: right
+}
+.contact-box,
+.copyright .social-icons,
+.copyright-logo a,
+.pages {
+    text-align: center
+}
+.sidebar {
+    padding-left: 10px
+}
+.widget {
+    margin-bottom: 40px
+}
+.widget-title {
+    font-size: 30px;
+    margin-bottom: 10px
+}
+.tags-list li {
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 3px 9px;
+    border: 1px solid #e8e8e8
+}
+.tags-list li:first-child {
+    margin-top: 0
+}
+.tags-list li a {
+    color: #151515
+}
+.tags-list li a:hover {
+    color: #d3af44
+}
+.blog-tweet {
+    font-size: 11px;
+    margin-top: 16px
+}
+.blog-tweet span {
+    display: block;
+    margin-top: 7px;
+    color: #868991;
+    font-size: 10px
+}
+.pagination {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0
+}
+.pages li {
+    display: inline-block;
+    margin: 0 2px 0 0
+}
+.pages li a {
+    font-size: 13px;
+    display: block;
+    padding: 5px;
+    color: #151515
+}
+.pages li a.current {
+    border-top: 2px solid #d3af44;
+    border-bottom: 2px solid #d3af44;
+    color: #1c1f26
+}
+.pages li a:hover {
+    color: #d3af44
+}
+.pagination a.next,
+.pagination a.previous {
+    height: 24px;
+    width: 24px;
+    display: block;
+    margin: 2px 0;
+    background-color: #151515;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 4px;
+    border-radius: 2px;
+    text-align: center
+}
+#blog-author,
+#blog-author .container {
+    border-bottom: 3px solid #666;
+    padding-bottom: 40px;
+    margin-bottom: 20px
+}
+.pagination a.next:hover,
+.pagination a.previous:hover {
+    background-color: #d3af44;
+    color: #fff
+}
+.pagination a.previous {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+.pagination a.next {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.pagination a i {
+    line-height: 24px
+}
+#blog-author {
+    position: relative
+}
+#blog-author img {
+    position: absolute;
+    width: 100%;
+    margin-right: 10px;
+    max-width: 100px;
+    padding: 4px;
+    border: 1px solid #e8e8e8
+}
+#blog-author p {
+    margin-left: 120px
+}
+.blog h1 a {
+    font-weight: 400
+}
+.commentlist {
+    list-style: none;
+    margin: 0 0 65px;
+    padding: 0
+}
+.commentlist li {
+    margin: 0;
+    padding: 0
+}
+.commentlist .the-comment {
+    border-bottom: 1px solid #e7e6e6;
+    padding-bottom: 35px;
+    margin-bottom: 35px
+}
+.commentlist .the-comment .comment-text:last-child {
+    margin-bottom: 0
+}
+.commentlist div.avatar {
+    float: left;
+    margin-right: 15px;
+    padding: 4px;
+    border: 1px solid #e8e8e8;
+    line-height: 0
+}
+.commentlist .comment-text p {
+    margin: 0
+}
+.commentlist .comment-author strong {
+    padding-right: 5px
+}
+#comment-input {
+    overflow: hidden;
+    margin-bottom: 13px
+}
+#comment-input input {
+    width: 28%;
+    padding: 8px 2%;
+    float: left;
+    margin-right: 1%;
+    border-radius: 2px
+}
+#comment-input input,
+#comment-textarea textarea {
+    border: 1px solid #e8e8e8;
+    font-size: 13px;
+    color: #747474
+}
+#comment-textarea textarea {
+    width: 96%;
+    height: 150px;
+    padding: 8px 11px;
+    border-radius: 2px
+}
+#comment-input input:last-child {
+    margin-right: 0
+}
+#comment-input input:-moz-placeholder,
+#comment-textarea textarea:-moz-placeholder {
+    color: #999
+}
+#comment-input input:-ms-input-placeholder,
+#comment-textarea textarea:-ms-input-placeholder {
+    color: #999
+}
+#comment-input input::-webkit-input-placeholder,
+#comment-textarea textarea::-webkit-input-placeholder {
+    color: #999
+}
+#contact {
+    padding-bottom: 0
+}
+.contact-box {
+    width: 100%;
+    padding: 45px 0 60px
+}
+.contact-details {
+    width: 70%;
+    padding: 5px 0;
+    margin: 0 auto 10px
+}
+.contact-details h2 {
+    margin-bottom: 0
+}
+.contact-details h1 {
+    color: #000;
+    background: rgba(255, 255, 255, .5);
+    -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff)
+}
+.copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding: 40px 0;
+    background: #d3af44;
+    color: rgba(0, 0, 0, .7);
+    font-size: 11px
+}
+.copyright a {
+    color: inherit
+}
+.copyright-logo a {
+    display: inline-block;
+    margin-bottom: 30px
+}
+.copyright .social-icons .social-icon {
+    display: inline-block;
+    float: none;
+    margin: 0 5px 30px 0;
+    background-color: rgba(0, 0, 0, .05)!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+#contact-input {
+    overflow: hidden;
+    margin-bottom: 13px;
+    width: 50%;
+    float: left
+}
+#contact-input input {
+    width: 90%;
+    padding: 20px 2%;
+    float: left;
+    margin: 0 1% 2%;
+    border-radius: 2px
+}
+#contact-input input,
+#contact-textarea textarea {
+    font-size: 13px;
+    border: 1px solid #e8e8e8;
+    color: #747474
+}
+#contact-textarea textarea {
+    width: 95%;
+    height: 92px;
+    padding: 20px 11px 10px;
+    border-radius: 2px;
+    margin-bottom: 10px
+}
+#contact-input input:last-child {
+    margin-right: 0
+}
+#contact-input input:-moz-placeholder,
+#contact-textarea textarea:-moz-placeholder {
+    color: #999
+}
+#contact-input input:-ms-input-placeholder,
+#contact-textarea textarea:-ms-input-placeholder {
+    color: #999
+}
+#contact-input input::-webkit-input-placeholder,
+#contact-textarea textarea::-webkit-input-placeholder {
+    color: #999
+}
+#contact-textarea {
+    width: 50%;
+    float: right
+}
+#contact-input label,
+#contact-textarea label {
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 2%
+}
+#contact-submit input[type=submit] {
+    padding: 20px 24px;
+    border: 0;
+    color: #fff;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-image: url(images/mail.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    height: 57px;
+    line-height: 57px
+}
+input[type=text],
+input[type=password],
+input[type=email],
+select,
+textarea {
+    background: #fff;
+    padding: 8px;
+    outline: 0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 0 20px;
+    max-width: 100%;
+    display: block;
+    width: 180px;
+    color: #999;
+    -moz-box-shadow: #ececec 0 1px 4px inset, #f8f8f8 -5px -5px 0 0, #f8f8f8 5px 5px 0 0, #f8f8f8 5px 0 0 0, #f8f8f8 0 5px 0 0, #f8f8f8 5px -5px 0 0, #f8f8f8 -5px 5px 0 0;
+    -webkit-box-shadow: #ececec 0 1px 4px inset, #f8f8f8 -5px -5px 0 0, #f8f8f8 5px 5px 0 0, #f8f8f8 5px 0 0 0, #f8f8f8 0 5px 0 0, #f8f8f8 5px -5px 0 0, #f8f8f8 -5px 5px 0 0;
+    box-shadow: #ececec 0 1px 4px inset, #f8f8f8 -5px -5px 0 0, #f8f8f8 5px 5px 0 0, #f8f8f8 5px 0 0 0, #f8f8f8 0 5px 0 0, #f8f8f8 5px -5px 0 0, #f8f8f8 -5px 5px 0 0;
+    border: 1px solid #e8e8e8
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 1px solid #e0e0e0;
+    color: #333
+}
+.home-banner,
+.home-newsletter {
+    color: #fff!important
+}
+.one_half {
+    width: 48%
+}
+.one_third {
+    width: 30.66%
+}
+.two_third {
+    width: 65.33%
+}
+.one_fourth {
+    width: 22%
+}
+.three_fourth {
+    width: 74%
+}
+.one_fifth {
+    width: 16.8%
+}
+.two_fifth {
+    width: 37.6%
+}
+.three_fifth {
+    width: 58.4%
+}
+.four_fifth {
+    width: 67.2%
+}
+.one_sixth {
+    width: 13.33%
+}
+.five_sixth {
+    width: 82.67%
+}
+.one_half.no-margin {
+    width: 50%;
+    margin-right: 0
+}
+.one_third.no-margin {
+    width: 33.33333333333%;
+    margin-right: 0
+}
+.two_third.no-margin {
+    width: 66.66666666667%;
+    margin-right: 0
+}
+.one_fourth.no-margin {
+    width: 25%;
+    margin-right: 0
+}
+.three_fourth.no-margin {
+    width: 75%;
+    margin-right: 0
+}
+.one_fifth.no-margin {
+    width: 20%;
+    margin-right: 0
+}
+.two_fifth.no-margin {
+    width: 40%;
+    margin-right: 0
+}
+.three_fifth.no-margin {
+    width: 60%;
+    margin-right: 0
+}
+.four_fifth.no-margin {
+    width: 80%;
+    margin-right: 0
+}
+.one_sixth.no-margin {
+    width: 16.6666666666667%;
+    margin-right: 0
+}
+.five_sixth.no-margin {
+    width: 83.333333333333%;
+    margin-right: 0
+}
+.five_sixth,
+.four_fifth,
+.one_fifth,
+.one_fourth,
+.one_half,
+.one_sixth,
+.one_third,
+.three_fifth,
+.three_fourth,
+.two_fifth,
+.two_third {
+    position: relative;
+    margin-right: 4%;
+    margin-bottom: 30px;
+    float: left
+}
+.last {
+    margin-right: 0!important
+}
+.fittext-content {
+    line-height: .8
+}
+* html .title h1 {
+    display: inline
+}
+#back-to-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    display: none
+}
+#back-to-top a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(images/backtotop.png) center center no-repeat #515A5F;
+    text-indent: -9999px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear
+}
+#back-to-top a:hover {
+    background-color: #222
+}
+.home-fullscreenvideo {
+    background: #1F2224
+}
+.background-video {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.home-banner {
+    height: auto!important;
+    padding: 150px 0
+}
+.home-banner .slabtextdone {
+    text-shadow: none
+}
+.home-newsletter .slabtextdone {
+    text-shadow: none;
+    color: #fff
+}
+.home-parallax2 {
+    background: url(images/parallax/parallax5.jpg) fixed;
+    background-size: cover
+}
+.home-parallax3 {
+    background: url(images/parallax/parallax6.jpg) fixed;
+    background-size: cover
+}
+.home-parallax4 {
+    background: url(images/parallax/parallax7.jpg) fixed;
+    background-size: cover
+}
+nav.colored,
+nav.light.colored {
+    background: #d3af44;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .07);
+    border-bottom: 0
+}
+nav.colored a {
+    color: #fff!important
+}
+nav.colored li.active a {
+    color: #515A5F!important
+}
+#newsletterform {
+    margin-top: 0;
+    display: block;
+    text-align: center
+}
+#newsletterform div {
+    display: inline-block
+}
+#newsletterform input {
+    height: 50px;
+    display: inline-block;
+    width: 250px;
+    padding: 0 10px;
+    margin: 8px 4px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid rgba(255, 255, 255, .09);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .1);
+    color: #3A3838;
+    background: #fff;
+    background: rgba(255, 255, 255, .5);
+    font-weight: 700
+}
+#newsletterform label {
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, .25);
+    font-size: 12px
+}
+a#button-newsletter {
+    color: #FFF;
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+    width: 99%;
+    margin: 5px auto 0;
+    text-align: center
+}
+.video_slide {
+    width: 100%
+}
+.video_slide .full_slide {
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute
+}
+.flex-control-nav,
+.flex-direction-nav,
+.slides {
+    float: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative
+}
+.flexslider {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    zoom: 1;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0
+}
+.flexslider .slides>li {
+    display: none;
+    position: relative;
+    margin-bottom: 0
+}
+.flexslider .slides img,
+.no-js .slides>li:first-child,
+.slides:after,
+html[xmlns] .slides {
+    display: block
+}
+.flexslider .slides img {
+    max-width: 100%
+}
+.flex-pauseplay span {
+    text-transform: capitalize
+}
+.slides:after {
+    content: ".";
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+* html .slides {
+    height: 1%
+}
+.flexslider .slides {
+    zoom: 1
+}
+.flex-container {
+    zoom: 1;
+    position: relative
+}
+.flex-direction-nav li a {
+    background: url(theme/bg_direction_nav.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    top: auto;
+    cursor: pointer;
+    text-indent: -999em;
+    z-index: 500
+}
+.flex-direction-nav li .flex-next {
+    background-position: -52px 0
+}
+.flex-control-nav li:first-child {
+    margin: 0
+}
+.flex-control-nav li a:hover {
+    background-position: 0 -13px
+}
+.flex-control-nav li a.flex-active {
+    background-position: 0 -26px
+}
+.flex-direction-nav li .flex-prev {
+    background: url(images/arrow_left.png) center center no-repeat #000;
+    background-color: rgba(0, 0, 0, .8);
+    left: 0
+}
+.flex-direction-nav li .flex-next {
+    background: url(images/arrow_right.png) center center no-repeat #000;
+    background-color: rgba(0, 0, 0, .8);
+    right: auto;
+    left: 41px
+}
+.flex-direction-nav li .disabled {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: default
+}
+.flex-control-nav {
+    z-index: 500;
+    width: 100%;
+    position: absolute;
+    bottom: auto;
+    top: 15px;
+    text-align: right;
+    padding-right: 25px;
+    left: -25px
+}
+.flex-control-nav li {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    zoom: 1
+}
+.flex-control-nav li a {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #222;
+    border: 2px solid #eee;
+    cursor: pointer;
+    text-indent: 999em;
+    border-radius: 50%
+}
+.flex-control-nav li a:hover {
+    background: #FFD600
+}
+.flex-control-nav li a.flex-active {
+    background: #FFD600;
+    cursor: default
+}
+.flex-caption {
+    zoom: 1;
+    width: auto;
+    padding: 0 15px;
+    line-height: 40px;
+    position: absolute;
+    left: 82px;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    color: #fff!important;
+    text-shadow: 0 0 0 transparent;
+    font-size: 14px;
+    margin: 0!important
+}
+.testimonial-slider .flex-direction-nav li a,
+.twitter-slider .flex-direction-nav li a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    text-indent: -999em;
+    background-color: #FFD600;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-size: 20px
+}
+.testimonial-slider .flex-direction-nav li .flex-prev,
+.twitter-slider .flex-direction-nav li .flex-prev {
+    left: 45%
+}
+.testimonial-slider .flex-direction-nav li .flex-next,
+.twitter-slider .flex-direction-nav li .flex-next {
+    right: 45%;
+    left: auto
+}
+#home-slider .flex-control-nav {
+    bottom: 0;
+    top: auto;
+    left: auto;
+    text-align: center
+}
+#home-slider .flex-control-nav li a {
+    width: 8px;
+    height: 8px
+}
+#home-slider .flex-control-nav li a:hover {
+    background: #fff
+}
+#home-slider .flex-control-nav li a.flex-active {
+    background: #fff;
+    cursor: default
+}
+@media only screen and (max-width: 960px) {
+    #portfolio-wrap .one-third {
+        width: 33.33%
+    }
+    .home-quote {
+        margin: 0 10px
+    }
+    .rnr-icon-middle h3 {
+        font-size: 24px
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .home-parallax,
+    .parallax-bg {
+        background-attachment: scroll;
+        background-position: top center!important;
+        background-size: cover
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .home-parallax,
+    .parallax-bg {
+        background-attachment: scroll;
+        background-position: top center!important;
+        background-size: cover
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    h1 {
+        font-size: 80px
+    }
+    .main-menu li,
+    .main-menu.iconic li {
+        margin-left: 20px
+    }
+    .main-menu a {
+        font-size: 18px
+    }
+    .testimonial-slider .flex-direction-nav li .flex-next,
+    .twitter-slider .flex-direction-nav li .flex-next {
+        right: 44%
+    }
+    .testimonial-slider .flex-direction-nav li .flex-prev,
+    .twitter-slider .flex-direction-nav li .flex-prev {
+        left: 44%
+    }
+    .team-member.team-four,
+    .team-member.team-two {
+        width: 50%
+    }
+}
+@media only screen and (max-width: 767px) {
+    .selectnav,
+    h1 {
+        line-height: 1
+    }
+    h1 {
+        font-size: 54px
+    }
+    .title h1 {
+        font-size: 40px
+    }
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 0
+    }
+    .modal {
+        position: absolute;
+        top: 0
+    }
+    .home-logo,
+    .home-logo-text {
+        margin: 40px 0 50px
+    }
+    .main-menu {
+        display: none
+    }
+    .logo.large,
+    .main-menu.large {
+        height: 60px
+    }
+    .selectnav {
+        display: block;
+        font-family: BebasNeueRegular, sans-serif;
+        text-transform: uppercase;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        padding: 0 10px;
+        border-radius: 0;
+        background-image: url(images/selectmenu.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        color: #3d3d3d;
+        outline: 0;
+        width: 150px;
+        background-size: 30px;
+        margin-top: 13px;
+        font-size: 24px;
+        min-width: auto
+    }
+    #slidecaption,
+    .testimonial-icon,
+    .twitter-feed-icon {
+        display: none
+    }
+    #home {
+        height: auto!important;
+        padding: 60px 0
+    }
+    .page {
+        padding-top: 90px;
+        padding-bottom: 40px
+    }
+    #prevslide {
+        left: 34%
+    }
+    #nextslide {
+        right: 34%
+    }
+    .container .column,
+    .container .columns {
+        margin-bottom: 40px
+    }
+    #ajaxpage .column,
+    #ajaxpage .columns,
+    .caption,
+    .project-media,
+    nav .container .columns,
+    nav .cotainer .column {
+        margin: 0
+    }
+    .caption {
+        position: relative;
+        left: 0;
+        bottom: 5px
+    }
+    .testimonial-slider .flex-direction-nav li .flex-next,
+    .twitter-slider .flex-direction-nav li .flex-next {
+        right: 36%
+    }
+    .testimonial-slider .flex-direction-nav li .flex-prev,
+    .twitter-slider .flex-direction-nav li .flex-prev {
+        left: 36%
+    }
+    #contact-input,
+    .contact-details,
+    .testimonial-slider,
+    .twitter-slider {
+        width: 100%
+    }
+    #contact-textarea {
+        width: 93%;
+        float: left;
+        margin: 0 1%
+    }
+    #contact-submit input[type=submit] {
+        width: 94%;
+        margin: 1%;
+        float: left
+    }
+    .copyright .social-icons .social-icon {
+        margin-bottom: 10px
+    }
+    .copyright p {
+        margin-top: 20px;
+        font-size: 11px
+    }
+    .color-block,
+    .color-block-content,
+    .parallax,
+    .parallax .overlay,
+    .parallax-content {
+        height: 400px
+    }
+    .team-member {
+        width: 100%;
+        float: none;
+        margin-bottom: 40px
+    }
+    #filters {
+        margin-top: 40px
+    }
+    #filters ul li a {
+        padding: 0;
+        margin: 0
+    }
+    #portfolio-wrap .one-third {
+        width: 50%
+    }
+    .project-media {
+        margin-top: 70px!important
+    }
+    #filters ul li a h3 {
+        margin-bottom: 5px
+    }
+    .home3 .home-text-wrapper .container {
+        width: 440px;
+        height: 440px
+    }
+    .five_sixth,
+    .four_fifth,
+    .one_fifth,
+    .one_fourth,
+    .one_half,
+    .one_sixth,
+    .one_third,
+    .three_fifth,
+    .three_fourth,
+    .two_fifth,
+    .two_third {
+        width: 100%;
+        margin: 0 0 40px;
+        float: none
+    }
+    .home-parallax,
+    .parallax-bg {
+        background-attachment: scroll;
+        background-position: top center!important;
+        background-size: cover
+    }
+    .contact-details h2,
+    p.quote {
+        font-size: 30px
+    }
+    #twitter-feed ul.slides>li {
+        font-size: 16px;
+        margin-bottom: 25px
+    }
+    a#button-newsletter {
+        width: 66%
+    }
+    .home-newsletter .home-quote h3 {
+        font-size: 20px
+    }
+}
+@media only screen and (max-width: 479px) {
+    .home-logo-text a {
+        font-size: 32px
+    }
+    .logo.large,
+    .main-menu.large {
+        height: 60px
+    }
+    .selectnav {
+        width: 150px;
+        background-size: 30px;
+        margin-top: 13px;
+        font-size: 24px;
+        min-width: auto
+    }
+    #portfolio-wrap .one-third {
+        width: 100%
+    }
+    .home3 .home-text-wrapper .container {
+        width: 280px;
+        height: 280px
+    }
+    .home3#home h1 {
+        font-size: 15px;
+        margin: 0 20px
+    }
+    #prevslide {
+        left: 30%
+    }
+    #nextslide {
+        right: 30%
+    }
+    a#button-newsletter {
+        width: 92%
+    }
+}
+@media only screen and (min-width: 1200px) {
+    nav .container {
+        width: 96%;
+        display: block
+    }
+    .home-logo-text a {
+        font-size: 90px
+    }
+    .slider-text {
+        width: 100%
+    }
+    .parallax,
+    .parallax .overlay,
+    .parallax .parallax-content {
+        height: 580px
+    }
+    #project-navigation {
+        width: 1040px;
+        height: 40px;
+        top: 50%;
+        left: 0;
+        margin: -20px -40px 0;
+        z-index: 0
+    }
+    #project-navigation ul li#prevProject a {
+        float: left;
+        margin-right: 0
+    }
+    #project-navigation ul li#nextProject a {
+        float: right;
+        margin-right: 0
+    }
+    #closeProject {
+        top: 10px;
+        right: -40px
+    }
+    .home4 .home-text-wrapper .container {
+        width: 65%
+    }
+}
+
+    .client-testimonial {
+        min-height: 90px;
+        padding-top: 30px !important;
+    }
+    .testimonial-slide img {
+        height: 130px;
+    }
+    body {
+    	height: 580px;
+    	overflow-y: hidden;
+    }
+    .flex-prev, .flex-next {
+    	background-color: #31a8d2 !important;
+    }
+    .parallax-content .title {
+    	font-family: 'Noto Sans' !important;
+    }
+</style>
+<div id='parallax2' class='parallax'>
+    <div class='bg2 parallax-bg' style='background-position: 50% -200px; height:650px;'></div>
+    <!-- END PARALLAX BACKGROUND -->
+    <div class='overlay'></div>
+    <div class="globe"></div>
+    <!-- END PATTERN OVERLAY -->
+    <div class='container clearfix'>
+        <div class='parallax-content'>
+            <p class='testimonial-icon'><img src='images/stars.png'>
+            </p>
+            <h3 class='title'><span>Our Testimonials</span></h3>
+            <div class='testimonial-slider'>
+                <div class='flexslider'>
+
+                    <div class='flex-viewport' style='overflow: hidden; position: relative;'>
+                        <ul class='slides styled-list' style='width: 5200%; -webkit-transition-duration: 0s; transition-duration: 0s; -webkit-transform: translate3d(-814px, 0px, 0px);'>
+                        	 <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/hilary.png' style='float:left; margin-top:9px;' />
+                                <p class='client-testimonial'>From the moment I arrived, the host did a wonderful job of making sure I felt welcome and oriented to the house's amenities. Every person I met was friendly and helpful. The bikes available were a perfect way to explore downtown Palo Alto and Stanford campus. Overall, an A+ experience for this lovely stay. </p>
+                                <div class='client-info'>Hilary, MGH Institute of Health Professions</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/lawrance.png' style='float:left; margin-top:9px;' />
+                                <p class='client-testimonial'>Great place to stay. Lots of open floor space with ample places to work. The perfect house for tech types who want to get work done during their stay. I was coming off of a stint at Google and working on a tech startup while there.</p>
+                                <div class='client-info'>Lawrance, University of Pennsylvania, The Wharton School</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/andrew.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>Great house. Well kept with good process. I really enjoyed my interactions with the host. He was professional and courteous.</p>
+                                <div class='client-info'>Andrew, University of Pennsylvania</div>
+                            </li>
+                             <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/saijin.jpg' style='float:left; margin-top:9px;' />
+                                <p class='client-testimonial'>I came out to Silicon Valley out of the Wharton School to scout the Palo Alto area. I had stayed in a few shared homes and this is exceedingly by far the best one yet. The host is great and a really friendly guy. I'm going to rebook it, for long term.</p>
+                                <div class='client-info'>Seijin, University of Pennsylvania, The Wharton School</div>
+                            </li>
+                             <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/luis.png' style='float:left; margin-top:9px;' />
+                                <p class='client-testimonial'> I had the opportunity to meet great people from different countries, with the most interesting, and awesome profiles. Of course I'll be back soon to continue with the process of my company thanks to your help! "BEST HOST EVER" </p>
+                                <div class='client-info'>Luis, CEO at Ecosistema Organico S.P.R. de R.L.</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/nima.png' style='float:left; margin-top:9px;' />
+                                <p class='client-testimonial'>The description of the place was accurate and the host as well as others staying there were friendly and sociable. If you're around the area, check it out - it's a cool place with cool people. You'd also be very close to University Avenue, Stanford, and the Caltrain which makes things very convenient.</p>
+                                <div class='client-info'>Nima, University of Waterloo</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/danilo.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>This is the hacker's house that I will recommend to all of my friends that are going to Palo Alto. Not only the good structure of the place and neighborhood, but the vibe of the entrepreneurs there... made my trip special! Thanks guys!</p>
+                                <div class='client-info'>Danilo, PUC-SP</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/muhammad.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>I had an awesome stay. Exactly the kind of place I wanted for my month's stay. I'd definitely recommend this place to my friends and will (most definitely) stay over again next time I'm around.</p>
+                                <div class='client-info'>Muhammad, University of Cambridge, Center for Advanced Research in Engineering</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/leandro.jpg' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>O lugar é muito bom, tem muitos pontos atrativos. A localização é central e tranquila para quem precisa estudar ou trabalhar em stanford</p>
+                                <div class='client-info'>Leandro, Stanford University Graduate Student (VSR)</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/roy.jpg' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>This is a very nice house to stay with many friendly guests! The host and guests were kind and helpful. I would definitely stay here again in the near future.</p>
+                                <div class='client-info'>Roy, Accepted to Y Combinator During Stay</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/jen.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>The location is very close to the downtown Palo Alto. And Palo Alto Transit Center is within walking distance, where I can easily take free shuttles to tour around the Stanford Campus.</p>
+                                <div class='client-info'>Jen-Chun, Institute of Cognitive Neuroscience, National Central University, Taiwan.</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/s.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>It was a wonderful place, Sha was great and a very friendly host! I was very impressed with the accommodations, they were very luxurious! An amazing kitchen, lots of common space and a beautiful and quant garden space too.</p>
+                                <div class='client-info'>Mwau'L, Sofia University</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/aviv.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>Great experience in a great location. The host was very kind and helpful in anything I needed. I stayed with an eclectic group of amiable people, who were very interesting and passionate about what they do. Will definitely come back again!</p>
+                                <div class='client-info'>Aviv, Brandeis University</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/magnus.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>The whole checkin-/checkout process was super uncomplicated, and right from the start I had interesting talks with the other guests, all of them nice people. Also the place's central location is a big plus - exploring Palo Alto can easily done by walking.</p>
+                                <div class='client-info'>Magnus, Startup Co-founder</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/abdul.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>Great environment. Clean and organized, and the host is fantastic.</p>
+                                <div class='client-info'>Abdul, Engineer at Doordash</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/shunpei.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>The host arranged everything. He was really friendly and helpful. The bed and bathroom is clean. There is comfortable common space. The host has some good ideas about interior decorating, so I think this space will become much better.</p>
+                                <div class='client-info'>Shunpei, Meiji University</div>
+                            </li>
+                            <li class='testimonial-slide' style='width: 814px; float: left; display: block;'>
+                                <img src='images/nic.png' style='float:left; margin-top:8px;' />
+                                <p class='client-testimonial'>Great place to stay and network with other students and young entrepreneurs. More than likely be staying there again when I am back in the area.</p>
+                                <div class='client-info'>Nic, LaunchPad Central</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class='flex-direction-nav'>
+                        <li><a class='flex-prev' href='#'>Previous</a>
+                        </li>
+                        <li><a class='flex-next' href='#'>Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- END PARALLAX CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+</div>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+<script type="text/javascript">
+
+ var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1;
+    	if(isSafari) {
+$('li.testimonial-slide:nth-child(2)').insertBefore('li.testimonial-slide:nth-child(1)');
+    	}
+    	else {
+    	}
+
+  </script>
+<script type='text/javascript'>
+function Callback(e) {
+    alert("err" == e.responseStatus ? "ajax" == e.responseMsg ? "Error - this script can only be invoked via an AJAX call." : "fileopen" == e.responseMsg ? "Error opening $emailsFile. Please refer to documentation for help." : "name" == e.responseMsg ? "Please enter a valid name." : "email" == e.responseMsg ? "Please enter a valid email address." : "duplicate" == e.responseMsg ? "You are already subscribed to our newsletter." : "filewrite" == e.responseMsg ? "Error writing to $emailsFile. Please refer to documentation for help." : "Undocumented error. Please refresh the page and try again." : "ok" == e.responseStatus ? "Thank you for subscribing to our newsletter!" : "Undocumented error. Please refresh the page and try again.")
+}
+
+function mailchimpCallback(e) {
+    alert("err" == e.responseStatus ? "ajax" == e.responseMsg ? "Error - this script can only be invoked via an AJAX call." : "name" == e.responseMsg ? "Please enter a valid name." : "email" == e.responseMsg ? "Please enter a valid email address." : "listid" == e.responseMsg ? "Invalid MailChimp list name." : "duplicate" == e.responseMsg ? "You are already subscribed to our newsletter." : "Undocumented error (" + e.responseMsg + "). Please refresh the page and try again." : "ok" == e.responseStatus ? "Thank you for subscribing! Please confirm your subscription in the email you'll receive shortly." : "Undocumented error. Please refresh the page and try again.")
+}
+
+function home_parallax() {
+    $(window).scroll(function() {
+        var e = -($(window).scrollTop() / 2),
+            t = "50% " + e + "px";
+        $(".home-parallax, .home-parallax2, .home-parallax3, .home-parallax4").css({
+            backgroundPosition: t
+        })
+    })
+}
+
+function initializePortfolio() {
+    function e() {
+        loader.fadeIn().removeClass("projectError").html(""), ajaxLoading || (ajaxLoading = !0, projectContainer.load(url + " div#ajaxpage", function(e, a) {
+            "success" == a && (ajaxLoading = !1, page = $("div#ajaxpage"), $(".flexslider").flexslider({
+                animation: "fade",
+                slideDirection: "horizontal",
+                slideshow: !0,
+                slideshowSpeed: 3500,
+                animationDuration: 500,
+                directionNav: !0,
+                controlNav: !0
+            }), jQuery("#ajaxpage").waitForImages(function() {
+                t()
+            }), $(".container").fitVids()), "error" == a && (loader.addClass("projectError").append(loadingError), loader.find("p").slideDown())
+        }))
+    }
+
+    function t() {
+        loader.fadeOut("fast", function() {
+            a()
+        })
+    }
+
+    function a() {
+        0 == content ? (wrapperHeight = projectContainer.children("div#ajaxpage").outerHeight() + "px", projectContainer.animate({
+            opacity: 1,
+            height: wrapperHeight
+        }, function() {
+            $(".container").fitVids(), scrollPostition = $("html,body").scrollTop(), projectNav.fadeIn(), exitProject.fadeIn(), content = !0
+        })) : (wrapperHeight = projectContainer.children("div#ajaxpage").outerHeight() + "px", projectContainer.animate({
+            opacity: 1,
+            height: wrapperHeight
+        }, function() {
+            $(".container").fitVids(), scrollPostition = $("html,body").scrollTop(), projectNav.fadeIn(), exitProject.fadeIn()
+        })), projectIndex = portfolioGrid.find("div.portfolio-item.current").index(), projectLength = $("div.portfolio-item .portfolio").length - 1, projectIndex == projectLength ? ($("ul li#nextProject a").addClass("disabled"), $("ul li#prevProject a").removeClass("disabled")) : 0 == projectIndex ? ($("ul li#prevProject a").addClass("disabled"), $("ul li#nextProject a").removeClass("disabled")) : $("ul li#nextProject a,ul li#prevProject a").removeClass("disabled")
+    }
+
+    function n(e) {
+        projectNav.fadeOut(100), exitProject.fadeOut(100), projectContainer.animate({
+            opacity: 0,
+            height: "0px"
+        }), projectContainer.empty(), "undefined" != typeof e && "" != e && (location = "#_"), portfolioGrid.find("div.portfolio-item.current").children().removeClass("active"), portfolioGrid.find("div.portfolio-item.current").removeClass("current")
+    }
+    $(window).bind("hashchange", function() {
+        hash = $(window.location).attr("hash");
+        var t = "#!" + folderName + "/",
+            a = t.length;
+        if (hash.substr(0, a) == t) {
+            var i = 50,
+                o = $("nav").outerHeight() + i;
+            hash = $(window.location).attr("hash"), url = hash.replace(/[#\!]/g, ""), portfolioGrid.find("div.portfolio-item.current").children().removeClass("active"), portfolioGrid.find("div.portfolio-item.current").removeClass("current"), 1 == pageRefresh && hash.substr(0, a) == t ? $("html,body").stop().animate({
+                scrollTop: projectContainer.offset().top - 20 + "px"
+            }, 800, "easeOutExpo", function() {
+                e()
+            }) : 0 == pageRefresh && hash.substr(0, a) == t ? $("html,body").stop().animate({
+                scrollTop: projectContainer.offset().top - o + "px"
+            }, 800, "easeOutExpo", function() {
+                0 == content ? e() : projectContainer.animate({
+                    opacity: 0,
+                    height: wrapperHeight
+                }, function() {
+                    e()
+                }), projectNav.fadeOut("100"), exitProject.fadeOut("100")
+            }) : ("" == hash && 0 == pageRefresh || hash.substr(0, a) != t && 0 == pageRefresh || hash.substr(0, a) != t && 1 == pageRefresh) && (scrollPostition = hash, $("html,body").stop().animate({
+                scrollTop: scrollPostition + "px"
+            }, 1e3, function() {
+                n()
+            })), portfolioGrid.find('div.portfolio-item .portfolio a[href="#!' + url + '"]').parent().parent().addClass("current"), portfolioGrid.find("div.portfolio-item.current").find(".portfolio").addClass("active")
+        }
+    }), $("#nextProject a").on("click", function() {
+        return current = portfolioGrid.find(".portfolio-item.current"), next = current.next(".portfolio-item"), target = $(next).children("div").children("a").attr("href"), $(this).attr("href", target), 0 === next.length ? !1 : (current.removeClass("current"), current.children().removeClass("active"), next.addClass("current"), void next.children().addClass("active"))
+    }), $("#prevProject a").on("click", function() {
+        return current = portfolioGrid.find(".portfolio-item.current"), prev = current.prev(".portfolio-item"), target = $(prev).children("div").children("a").attr("href"), $(this).attr("href", target), 0 === prev.length ? !1 : (current.removeClass("current"), current.children().removeClass("active"), prev.addClass("current"), void prev.children().addClass("active"))
+    }), $("#closeProject a").on("click", function() {
+        return n($(this).attr("href")), portfolioGrid.find("div.portfolio-item.current").children().removeClass("active"), loader.fadeOut(), !1
+    }), pageRefresh = !1
+}! function(e) {
+    e.flexslider = function(t, a) {
+        var n = e(t),
+            i = e.extend({}, e.flexslider.defaults, a),
+            o = i.namespace,
+            r = "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch,
+            s = "click", //r ? "touchend" : "click",
+            l = "vertical" === i.direction,
+            c = i.reverse,
+            d = 0 < i.itemWidth,
+            u = "fade" === i.animation,
+            p = "" !== i.asNavFor,
+            m = {};
+            console.log(r);
+        e.data(t, "flexslider", n), m = {
+            init: function() {
+                n.animating = !1, n.currentSlide = i.startAt, n.animatingTo = n.currentSlide, n.atEnd = 0 === n.currentSlide || n.currentSlide === n.last, n.containerSelector = i.selector.substr(0, i.selector.search(" ")), n.slides = e(i.selector, n), n.container = e(n.containerSelector, n), n.count = n.slides.length, n.syncExists = 0 < e(i.sync).length, "slide" === i.animation && (i.animation = "swing"), n.prop = l ? "top" : "marginLeft", n.args = {}, n.manualPause = !1;
+                var t, a = n;
+                if ((t = !i.video) && (t = !u) && (t = i.useCSS)) e: {
+                    t = document.createElement("div");
+                    var o, s = ["perspectiveProperty", "WebkitPerspective", "MozPerspective", "OPerspective", "msPerspective"];
+                    for (o in s)
+                        if (void 0 !== t.style[s[o]]) {
+                            n.pfx = s[o].replace("Perspective", "").toLowerCase(), n.prop = "-" + n.pfx + "-transform", t = !0;
+                            break e
+                        }
+                    t = !1
+                }
+                a.transitions = t, "" !== i.controlsContainer && (n.controlsContainer = 0 < e(i.controlsContainer).length && e(i.controlsContainer)), "" !== i.manualControls && (n.manualControls = 0 < e(i.manualControls).length && e(i.manualControls)), i.randomize && (n.slides.sort(function() {
+                    return Math.round(Math.random()) - .5
+                }), n.container.empty().append(n.slides)), n.doMath(), p && m.asNav.setup(), n.setup("init"), i.controlNav && m.controlNav.setup(), i.directionNav && m.directionNav.setup(), i.keyboard && (1 === e(n.containerSelector).length || i.multipleKeyboard) && e(document).bind("keyup", function(e) {
+                    e = e.keyCode, n.animating || 39 !== e && 37 !== e || (e = 39 === e ? n.getTarget("next") : 37 === e ? n.getTarget("prev") : !1, n.flexAnimate(e, i.pauseOnAction))
+                }), i.mousewheel && n.bind("mousewheel", function(e, t) {
+                    e.preventDefault();
+                    var a = n.getTarget(0 > t ? "next" : "prev");
+                    n.flexAnimate(a, i.pauseOnAction)
+                }), i.pausePlay && m.pausePlay.setup(), i.slideshow && (i.pauseOnHover && n.hover(function() {
+                    !n.manualPlay && !n.manualPause && n.pause()
+                }, function() {
+                    !n.manualPause && !n.manualPlay && n.play()
+                }), 0 < i.initDelay ? setTimeout(n.play, i.initDelay) : n.play()), r && i.touch && m.touch(), (!u || u && i.smoothHeight) && e(window).bind("resize focus", m.resize), setTimeout(function() {
+                    i.start(n)
+                }, 200)
+            },
+            asNav: {
+                setup: function() {
+                    n.asNav = !0, n.animatingTo = Math.floor(n.currentSlide / n.move), n.currentItem = n.currentSlide, n.slides.removeClass(o + "active-slide").eq(n.currentItem).addClass(o + "active-slide"), n.slides.click(function(t) {
+                        t.preventDefault(), t = e(this);
+                        var a = t.index();
+                        !e(i.asNavFor).data("flexslider").animating && !t.hasClass("active") && (n.direction = n.currentItem < a ? "next" : "prev", n.flexAnimate(a, i.pauseOnAction, !1, !0, !0))
+                    })
+                }
+            },
+            controlNav: {
+                setup: function() {
+                    n.manualControls ? m.controlNav.setupManual() : m.controlNav.setupPaging()
+                },
+                setupPaging: function() {
+                    var t, a = 1;
+                    if (n.controlNavScaffold = e('<ol class="' + o + "control-nav " + o + ("thumbnails" === i.controlNav ? "control-thumbs" : "control-paging") + '"></ol>'), 1 < n.pagingCount)
+                        for (var l = 0; l < n.pagingCount; l++) t = "thumbnails" === i.controlNav ? '<img src="' + n.slides.eq(l).attr("data-thumb") + '"/>' : "<a>" + a + "</a>", n.controlNavScaffold.append("<li>" + t + "</li>"), a++;
+                    n.controlsContainer ? e(n.controlsContainer).append(n.controlNavScaffold) : n.append(n.controlNavScaffold), m.controlNav.set(), m.controlNav.active(), n.controlNavScaffold.delegate("a, img", s, function(t) {
+                        t.preventDefault(), t = e(this);
+                        var a = n.controlNav.index(t);
+                        t.hasClass(o + "active") || (n.direction = a > n.currentSlide ? "next" : "prev", n.flexAnimate(a, i.pauseOnAction))
+                    }), r && n.controlNavScaffold.delegate("a", "click touchstart", function(e) {
+                        e.preventDefault()
+                    })
+                },
+                setupManual: function() {
+                    n.controlNav = n.manualControls, m.controlNav.active(), n.controlNav.live(s, function(t) {
+                        t.preventDefault(), t = e(this);
+                        var a = n.controlNav.index(t);
+                        t.hasClass(o + "active") || (n.direction = a > n.currentSlide ? "next" : "prev", n.flexAnimate(a, i.pauseOnAction))
+                    }), r && n.controlNav.live("click touchstart", function(e) {
+                        e.preventDefault()
+                    })
+                },
+                set: function() {
+                    n.controlNav = e("." + o + "control-nav li " + ("thumbnails" === i.controlNav ? "img" : "a"), n.controlsContainer ? n.controlsContainer : n)
+                },
+                active: function() {
+                    n.controlNav.removeClass(o + "active").eq(n.animatingTo).addClass(o + "active")
+                },
+                update: function(t, a) {
+                    1 < n.pagingCount && "add" === t ? n.controlNavScaffold.append(e("<li><a>" + n.count + "</a></li>")) : 1 === n.pagingCount ? n.controlNavScaffold.find("li").remove() : n.controlNav.eq(a).closest("li").remove(), m.controlNav.set(), 1 < n.pagingCount && n.pagingCount !== n.controlNav.length ? n.update(a, t) : m.controlNav.active()
+                }
+            },
+            directionNav: {
+                setup: function() {
+                    var t = e('<ul class="' + o + 'direction-nav"><li><a class="' + o + 'prev" href="#">' + i.prevText + '</a></li><li><a class="' + o + 'next" href="#">' + i.nextText + "</a></li></ul>");
+                    n.controlsContainer ? (e(n.controlsContainer).append(t), n.directionNav = e("." + o + "direction-nav li a", n.controlsContainer)) : (n.append(t), n.directionNav = e("." + o + "direction-nav li a", n)), m.directionNav.update(), n.directionNav.bind(s, function(t) {
+                        t.preventDefault(), t = n.getTarget(e(this).hasClass(o + "next") ? "next" : "prev"), n.flexAnimate(t, i.pauseOnAction)
+                    }), r && n.directionNav.bind("click touchstart", function(e) {
+                        e.preventDefault()
+                    })
+                },
+                update: function() {
+                    var e = o + "disabled";
+                    1 === n.pagingCount ? n.directionNav.addClass(e) : i.animationLoop ? n.directionNav.removeClass(e) : 0 === n.animatingTo ? n.directionNav.removeClass(e).filter("." + o + "prev").addClass(e) : n.animatingTo === n.last ? n.directionNav.removeClass(e).filter("." + o + "next").addClass(e) : n.directionNav.removeClass(e)
+                }
+            },
+            pausePlay: {
+                setup: function() {
+                    var t = e('<div class="' + o + 'pauseplay"><a></a></div>');
+                    n.controlsContainer ? (n.controlsContainer.append(t), n.pausePlay = e("." + o + "pauseplay a", n.controlsContainer)) : (n.append(t), n.pausePlay = e("." + o + "pauseplay a", n)), m.pausePlay.update(i.slideshow ? o + "pause" : o + "play"), n.pausePlay.bind(s, function(t) {
+                        t.preventDefault(), e(this).hasClass(o + "pause") ? (n.manualPause = !0, n.manualPlay = !1, n.pause()) : (n.manualPause = !1, n.manualPlay = !0, n.play())
+                    }), r && n.pausePlay.bind("click touchstart", function(e) {
+                        e.preventDefault()
+                    })
+                },
+                update: function(e) {
+                    "play" === e ? n.pausePlay.removeClass(o + "pause").addClass(o + "play").text(i.playText) : n.pausePlay.removeClass(o + "play").addClass(o + "pause").text(i.pauseText)
+                }
+            },
+            touch: function() {
+                function e(e) {
+                    m = l ? o - e.touches[0].pageY : o - e.touches[0].pageX, v = l ? Math.abs(m) < Math.abs(e.touches[0].pageX - r) : Math.abs(m) < Math.abs(e.touches[0].pageY - r), (!v || 500 < Number(new Date) - f) && (e.preventDefault(), !u && n.transitions && (i.animationLoop || (m /= 0 === n.currentSlide && 0 > m || n.currentSlide === n.last && m > 0 ? Math.abs(m) / p + 2 : 1), n.setProps(s + m, "setTouch")))
+                }
+
+                function a() {
+                    if (t.removeEventListener("touchmove", e, !1), n.animatingTo === n.currentSlide && !v && null !== m) {
+                        var l = c ? -m : m,
+                            d = n.getTarget(l > 0 ? "next" : "prev");
+                        n.canAdvance(d) && (550 > Number(new Date) - f && 50 < Math.abs(l) || Math.abs(l) > p / 2) ? n.flexAnimate(d, i.pauseOnAction) : u || n.flexAnimate(n.currentSlide, i.pauseOnAction, !0)
+                    }
+                    t.removeEventListener("touchend", a, !1), s = m = r = o = null
+                }
+                var o, r, s, p, m, f, v = !1;
+                t.addEventListener("touchstart", function(u) {
+                    n.animating ? u.preventDefault() : 1 === u.touches.length && (n.pause(), p = l ? n.h : n.w, f = Number(new Date), s = d && c && n.animatingTo === n.last ? 0 : d && c ? n.limit - (n.itemW + i.itemMargin) * n.move * n.animatingTo : d && n.currentSlide === n.last ? n.limit : d ? (n.itemW + i.itemMargin) * n.move * n.currentSlide : c ? (n.last - n.currentSlide + n.cloneOffset) * p : (n.currentSlide + n.cloneOffset) * p, o = l ? u.touches[0].pageY : u.touches[0].pageX, r = l ? u.touches[0].pageX : u.touches[0].pageY, t.addEventListener("touchmove", e, !1), t.addEventListener("touchend", a, !1))
+                }, !1)
+            },
+            resize: function() {
+                !n.animating && n.is(":visible") && (d || n.doMath(), u ? m.smoothHeight() : d ? (n.slides.width(n.computedW), n.update(n.pagingCount), n.setProps()) : l ? (n.viewport.height(n.h), n.setProps(n.h, "setTotal")) : (i.smoothHeight && m.smoothHeight(), n.newSlides.width(n.computedW), n.setProps(n.computedW, "setTotal")))
+            },
+            smoothHeight: function(e) {
+                if (!l || u) {
+                    var t = u ? n : n.viewport;
+                    e ? t.animate({
+                        height: n.slides.eq(n.animatingTo).height()
+                    }, e) : t.height(n.slides.eq(n.animatingTo).height())
+                }
+            },
+            sync: function(t) {
+                var a = e(i.sync).data("flexslider"),
+                    o = n.animatingTo;
+                switch (t) {
+                    case "animate":
+                        a.flexAnimate(o, i.pauseOnAction, !1, !0);
+                        break;
+                    case "play":
+                        !a.playing && !a.asNav && a.play();
+                        break;
+                    case "pause":
+                        a.pause()
+                }
+            }
+        }, n.flexAnimate = function(t, a, s, f, v) {
+            if (p && 1 === n.pagingCount && (n.direction = n.currentItem < t ? "next" : "prev"), !n.animating && (n.canAdvance(t, v) || s) && n.is(":visible")) {
+                if (p && f) {
+                    if (s = e(i.asNavFor).data("flexslider"), n.atEnd = 0 === t || t === n.count - 1, s.flexAnimate(t, !0, !1, !0, v), n.direction = n.currentItem < t ? "next" : "prev", s.direction = n.direction, Math.ceil((t + 1) / n.visible) - 1 === n.currentSlide || 0 === t) return n.currentItem = t, n.slides.removeClass(o + "active-slide").eq(t).addClass(o + "active-slide"), !1;
+                    n.currentItem = t, n.slides.removeClass(o + "active-slide").eq(t).addClass(o + "active-slide"), t = Math.floor(t / n.visible)
+                }
+                if (n.animating = !0, n.animatingTo = t, i.before(n), a && n.pause(), n.syncExists && !v && m.sync("animate"), i.controlNav && m.controlNav.active(), d || n.slides.removeClass(o + "active-slide").eq(t).addClass(o + "active-slide"), n.atEnd = 0 === t || t === n.last, i.directionNav && m.directionNav.update(), t === n.last && (i.end(n), i.animationLoop || n.pause()), u) r ? (n.slides.eq(n.currentSlide).css({
+                    opacity: 0,
+                    zIndex: 1
+                }), n.slides.eq(t).css({
+                    opacity: 1,
+                    zIndex: 2
+                }), n.slides.unbind("webkitTransitionEnd transitionend"), n.slides.eq(n.currentSlide).bind("webkitTransitionEnd transitionend", function() {
+                    i.after(n)
+                }), n.animating = !1, n.currentSlide = n.animatingTo) : (n.slides.eq(n.currentSlide).fadeOut(i.animationSpeed, i.easing), n.slides.eq(t).fadeIn(i.animationSpeed, i.easing, n.wrapup));
+                else {
+                    var h = l ? n.slides.filter(":first").height() : n.computedW;
+                    d ? (t = i.itemWidth > n.w ? 2 * i.itemMargin : i.itemMargin, t = (n.itemW + t) * n.move * n.animatingTo, t = t > n.limit && 1 !== n.visible ? n.limit : t) : t = 0 === n.currentSlide && t === n.count - 1 && i.animationLoop && "next" !== n.direction ? c ? (n.count + n.cloneOffset) * h : 0 : n.currentSlide === n.last && 0 === t && i.animationLoop && "prev" !== n.direction ? c ? 0 : (n.count + 1) * h : c ? (n.count - 1 - t + n.cloneOffset) * h : (t + n.cloneOffset) * h, n.setProps(t, "", i.animationSpeed), n.transitions ? (i.animationLoop && n.atEnd || (n.animating = !1, n.currentSlide = n.animatingTo), n.container.unbind("webkitTransitionEnd transitionend"), n.container.bind("webkitTransitionEnd transitionend", function() {
+                        n.wrapup(h)
+                    })) : n.container.animate(n.args, i.animationSpeed, i.easing, function() {
+                        n.wrapup(h)
+                    })
+                }
+                i.smoothHeight && m.smoothHeight(i.animationSpeed)
+            }
+        }, n.wrapup = function(e) {
+            !u && !d && (0 === n.currentSlide && n.animatingTo === n.last && i.animationLoop ? n.setProps(e, "jumpEnd") : n.currentSlide === n.last && 0 === n.animatingTo && i.animationLoop && n.setProps(e, "jumpStart")), n.animating = !1, n.currentSlide = n.animatingTo, i.after(n)
+        }, n.animateSlides = function() {
+            n.animating || n.flexAnimate(n.getTarget("next"))
+        }, n.pause = function() {
+            clearInterval(n.animatedSlides), n.playing = !1, i.pausePlay && m.pausePlay.update("play"), n.syncExists && m.sync("pause")
+        }, n.play = function() {
+            n.animatedSlides = setInterval(n.animateSlides, i.slideshowSpeed), n.playing = !0, i.pausePlay && m.pausePlay.update("pause"), n.syncExists && m.sync("play")
+        }, n.canAdvance = function(e, t) {
+            var a = p ? n.pagingCount - 1 : n.last;
+            return t ? !0 : p && n.currentItem === n.count - 1 && 0 === e && "prev" === n.direction ? !0 : p && 0 === n.currentItem && e === n.pagingCount - 1 && "next" !== n.direction ? !1 : e !== n.currentSlide || p ? i.animationLoop ? !0 : n.atEnd && 0 === n.currentSlide && e === a && "next" !== n.direction ? !1 : n.atEnd && n.currentSlide === a && 0 === e && "next" === n.direction ? !1 : !0 : !1
+        }, n.getTarget = function(e) {
+            return n.direction = e, "next" === e ? n.currentSlide === n.last ? 0 : n.currentSlide + 1 : 0 === n.currentSlide ? n.last : n.currentSlide - 1
+        }, n.setProps = function(e, t, a) {
+            var o, r = e ? e : (n.itemW + i.itemMargin) * n.move * n.animatingTo;
+            o = -1 * function() {
+                if (d) return "setTouch" === t ? e : c && n.animatingTo === n.last ? 0 : c ? n.limit - (n.itemW + i.itemMargin) * n.move * n.animatingTo : n.animatingTo === n.last ? n.limit : r;
+                switch (t) {
+                    case "setTotal":
+                        return c ? (n.count - 1 - n.currentSlide + n.cloneOffset) * e : (n.currentSlide + n.cloneOffset) * e;
+                    case "setTouch":
+                        return e;
+                    case "jumpEnd":
+                        return c ? e : n.count * e;
+                    case "jumpStart":
+                        return c ? n.count * e : e;
+                    default:
+                        return e
+                }
+            }() + "px", n.transitions && (o = l ? "translate3d(0," + o + ",0)" : "translate3d(" + o + ",0,0)", a = void 0 !== a ? a / 1e3 + "s" : "0s", n.container.css("-" + n.pfx + "-transition-duration", a)), n.args[n.prop] = o, (n.transitions || void 0 === a) && n.container.css(n.args)
+        }, n.setup = function(t) {
+            if (u) n.slides.css({
+                width: "100%",
+                "float": "left",
+                marginRight: "-100%",
+                position: "relative"
+            }), "init" === t && (r ? n.slides.css({
+                opacity: 0,
+                display: "block",
+                webkitTransition: "opacity " + i.animationSpeed / 1e3 + "s ease",
+                zIndex: 1
+            }).eq(n.currentSlide).css({
+                opacity: 1,
+                zIndex: 2
+            }) : n.slides.eq(n.currentSlide).fadeIn(i.animationSpeed, i.easing)), i.smoothHeight && m.smoothHeight();
+            else {
+                var a, s;
+                "init" === t && (n.viewport = e('<div class="' + o + 'viewport"></div>').css({
+                    overflow: "hidden",
+                    position: "relative"
+                }).appendTo(n).append(n.container), n.cloneCount = 0, n.cloneOffset = 0, c && (s = e.makeArray(n.slides).reverse(), n.slides = e(s), n.container.empty().append(n.slides))), i.animationLoop && !d && (n.cloneCount = 2, n.cloneOffset = 1, "init" !== t && n.container.find(".clone").remove(), n.container.append(n.slides.first().clone().addClass("clone")).prepend(n.slides.last().clone().addClass("clone"))), n.newSlides = e(i.selector, n), a = c ? n.count - 1 - n.currentSlide + n.cloneOffset : n.currentSlide + n.cloneOffset, l && !d ? (n.container.height(200 * (n.count + n.cloneCount) + "%").css("position", "absolute").width("100%"), setTimeout(function() {
+                    n.newSlides.css({
+                        display: "block"
+                    }), n.doMath(), n.viewport.height(n.h), n.setProps(a * n.h, "init")
+                }, "init" === t ? 100 : 0)) : (n.container.width(200 * (n.count + n.cloneCount) + "%"), n.setProps(a * n.computedW, "init"), setTimeout(function() {
+                    n.doMath(), n.newSlides.css({
+                        width: n.computedW,
+                        "float": "left",
+                        display: "block"
+                    }), i.smoothHeight && m.smoothHeight()
+                }, "init" === t ? 100 : 0))
+            }
+            d || n.slides.removeClass(o + "active-slide").eq(n.currentSlide).addClass(o + "active-slide")
+        }, n.doMath = function() {
+            var e = n.slides.first(),
+                t = i.itemMargin,
+                a = i.minItems,
+                o = i.maxItems;
+            n.w = n.width(), n.h = e.height(), n.boxPadding = e.outerWidth() - e.width(), d ? (n.itemT = i.itemWidth + t, n.minW = a ? a * n.itemT : n.w, n.maxW = o ? o * n.itemT : n.w, n.itemW = n.minW > n.w ? (n.w - t * a) / a : n.maxW < n.w ? (n.w - t * o) / o : i.itemWidth > n.w ? n.w : i.itemWidth, n.visible = Math.floor(n.w / (n.itemW + t)), n.move = 0 < i.move && i.move < n.visible ? i.move : n.visible, n.pagingCount = Math.ceil((n.count - n.visible) / n.move + 1), n.last = n.pagingCount - 1, n.limit = 1 === n.pagingCount ? 0 : i.itemWidth > n.w ? (n.itemW + 2 * t) * n.count - n.w - t : (n.itemW + t) * n.count - n.w - t) : (n.itemW = n.w, n.pagingCount = n.count, n.last = n.count - 1), n.computedW = n.itemW - n.boxPadding
+        }, n.update = function(e, t) {
+            n.doMath(), d || (e < n.currentSlide ? n.currentSlide += 1 : e <= n.currentSlide && 0 !== e && (n.currentSlide -= 1), n.animatingTo = n.currentSlide), i.controlNav && !n.manualControls && ("add" === t && !d || n.pagingCount > n.controlNav.length ? m.controlNav.update("add") : ("remove" === t && !d || n.pagingCount < n.controlNav.length) && (d && n.currentSlide > n.last && (n.currentSlide -= 1, n.animatingTo -= 1), m.controlNav.update("remove", n.last))), i.directionNav && m.directionNav.update()
+        }, n.addSlide = function(t, a) {
+            var o = e(t);
+            n.count += 1, n.last = n.count - 1, l && c ? void 0 !== a ? n.slides.eq(n.count - a).after(o) : n.container.prepend(o) : void 0 !== a ? n.slides.eq(a).before(o) : n.container.append(o), n.update(a, "add"), n.slides = e(i.selector + ":not(.clone)", n), n.setup(), i.added(n)
+        }, n.removeSlide = function(t) {
+            var a = isNaN(t) ? n.slides.index(e(t)) : t;
+            n.count -= 1, n.last = n.count - 1, isNaN(t) ? e(t, n.slides).remove() : l && c ? n.slides.eq(n.last).remove() : n.slides.eq(t).remove(), n.doMath(), n.update(a, "remove"), n.slides = e(i.selector + ":not(.clone)", n), n.setup(), i.removed(n)
+        }, m.init()
+    }, e.flexslider.defaults = {
+        namespace: "flex-",
+        selector: ".slides > li",
+        animation: "fade",
+        easing: "swing",
+        direction: "horizontal",
+        reverse: !1,
+        animationLoop: !0,
+        smoothHeight: !1,
+        startAt: 0,
+        slideshow: !0,
+        slideshowSpeed: 7e3,
+        animationSpeed: 600,
+        initDelay: 0,
+        randomize: !1,
+        pauseOnAction: !0,
+        pauseOnHover: !1,
+        useCSS: !0,
+        touch: !0,
+        video: !1,
+        controlNav: !0,
+        directionNav: !0,
+        prevText: "Previous",
+        nextText: "Next",
+        keyboard: !0,
+        multipleKeyboard: !1,
+        mousewheel: !1,
+        pausePlay: !1,
+        pauseText: "Pause",
+        playText: "Play",
+        controlsContainer: "",
+        manualControls: "",
+        sync: "",
+        asNavFor: "",
+        itemWidth: 0,
+        itemMargin: 0,
+        minItems: 0,
+        maxItems: 0,
+        move: 0,
+        start: function() {},
+        before: function() {},
+        after: function() {},
+        end: function() {},
+        added: function() {},
+        removed: function() {}
+    }, e.fn.flexslider = function(t) {
+        if (void 0 === t && (t = {}), "object" == typeof t) return this.each(function() {
+            var a = e(this),
+                n = a.find(t.selector ? t.selector : ".slides > li");
+            1 === n.length ? (n.fadeIn(400), t.start && t.start(a)) : void 0 == a.data("flexslider") && new e.flexslider(this, t)
+        });
+        var a = e(this).data("flexslider");
+        switch (t) {
+            case "play":
+                a.play();
+                break;
+            case "pause":
+                a.pause();
+                break;
+            case "next":
+                a.flexAnimate(a.getTarget("next"), !0);
+                break;
+            case "prev":
+            case "previous":
+                a.flexAnimate(a.getTarget("prev"), !0);
+                break;
+            default:
+                "number" == typeof t && a.flexAnimate(t, !0)
+        }
+    }
+}(jQuery), jQuery(document).ready(function(e) {
+    var t = e(window).width(),
+        a = t / 1.78011 + 1;
+    e(".video_slide").css("height", a), e(window).resize(function() {
+        var t = e(window).width(),
+            a = t / 1.78011 + 1;
+        e(".video_slide").css("height", a)
+    })
+});
+var window_height = $(window).height(),
+    testMobile, loadingError = '<p class="error">The Content cannot be loaded.</p>',
+    nameError = '<div class="alert-message error">Please enter your name.<span class="close" href="#">x</span></div>',
+    emailError = '<div class="alert-message error">Please enter your e-mail address.<span class="close" href="#">x</span></div>',
+    invalidEmailError = '<div class="alert-message error">Please enter a valid e-mail address.<span class="close" href="#">x</span></div>',
+    subjectError = '<div class="alert-message error">Please enter the subject.<span class="close" href="#">x</span></div>',
+    messageError = '<div class="alert-message error">Please enter your message.<span class="close" href="#">x</span></div>',
+    mailSuccess = '<div class="alert-message success">Your message has been sent. Thank you!<span class="close" href="#">x</span></div>',
+    mailResult = $("#contact .result"),
+    current, next, prev, target, hash, url, page, title, projectIndex, scrollPostition, projectLength, ajaxLoading = !1,
+    wrapperHeight, pageRefresh = !0,
+    content = !1,
+    loader = $("div#loader"),
+    portfolioGrid = $("div#portfolio-wrap"),
+    projectContainer = $("div#ajax-content-inner"),
+    projectNav = $("#project-navigation ul"),
+    exitProject = $("div#closeProject a"),
+    easing = "easeOutExpo",
+    folderName = "projects";
+$.browser.safari = $.browser.webkit && !/chrome/.test(navigator.userAgent.toLowerCase()), $.browser.safari || $(".home-parallax").find(".home-text-wrapper").children(".container").addClass("no-safari"), $(function() {
+    $("#newsletterform").length && ("true" == $("#newsletterform").attr("data-mailchimp") ? ($("#newsletterform").attr("action", "subscribe-mailchimp.php"), $("#newsletterform").ajaxForm({
+        dataType: "json",
+        timeout: 2e3,
+        success: mailchimpCallback
+    })) : ($("#newsletterform").attr("action", "subscribe.php"), $("#newsletterform").ajaxForm({
+        dataType: "json",
+        timeout: 2e3,
+        success: Callback
+    })), $("#button-newsletter").click(function() {
+        return $("#newsletterform").submit(), !1
+    }))
+}), $(".home-slide").each(function() {
+    contentSize = $(this).find(".home-slide-content"), contentSize.fitText(1.2)
+});
+var init = function() {
+    function e() {
+        $(".home-quote h1").slabText({
+            viewportBreakpoint: 300
+        })
+    }
+
+    function t() {
+        $("#home, .background-video").css({
+            height: window_height
+        })
+    }
+    $("nav").animate({
+        opacity: "1"
+    }, 400), $(window).load(function() {
+        setTimeout(e, 5)
+    }), t(), $(window).bind("resize", function() {
+        t(), home_parallax()
+    })
+};
+jQuery(window).load(function() {
+    jQuery(document).ready(function(e) {
+        function t() {
+            var t = e(window).width(),
+                a = 1;
+            return t > 1200 ? a = 5 : t > 900 ? a = 4 : t > 600 ? a = 3 : t > 300 && (a = 1), a
+        }
+
+        function a() {
+            var a = e(window).width(),
+                n = t(),
+                o = Math.floor(a / n);
+            i.find(".portfolio-item").each(function() {
+                e(this).css({
+                    width: o + "px"
+                })
+            })
+        }
+
+        function n() {
+            a(), i.isotope("reLayout")
+        }
+        var i = e("#portfolio-wrap");
+        i.isotope({
+            animationEngine: "best-available",
+            animationOptions: {
+                duration: 200,
+                queue: !1
+            },
+            layoutMode: "fitRows"
+        }), e("#filters a").click(function() {
+            e("#filters a").removeClass("active"), e(this).addClass("active");
+            var t = e(this).attr("data-filter");
+            return i.isotope({
+                filter: t
+            }), n(), !1
+        }), i.imagesLoaded(function() {
+            a()
+        }), e(window).bind("resize", function() {
+            n()
+        })
+    })
+}), home_parallax();
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i)
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i)
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i)
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i)
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i)
+    },
+    any: function() {
+        return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()
+    }
+};
+$("#contact form").submit(function() {
+        var e = $(this),
+            t = e.serialize();
+        return $.ajax({
+            url: "contact.php",
+            type: "POST",
+            traditional: !0,
+            data: t,
+            success: function(e) {
+                var t = jQuery.parseJSON(e);
+                if (t.success) $("#contact form").slideUp().height("0"), $("#contact .result").append(mailSuccess);
+                else
+                    for (i = 0; i < t.errors.length; i++) "empty_name" == t.errors[i].error && mailResult.append(nameError), "empty_email" == t.errors[i].error && mailResult.append(emailError), "empty_subject" == t.errors[i].error && mailResult.append(subjectError), "empty_message" == t.errors[i].error && mailResult.append(messageError), "invalid" == t.errors[i].error && mailResult.append(invalidEmailError)
+            }
+        }), !1
+    }), $(document).ready(function() {
+        function e() {
+            testMobile = isMobile.any(), null == testMobile && ($(".parallax .bg1").parallax("50%", .6), $(".parallax .bg2").parallax("50%", .6), $(".parallax .bg3").parallax("50%", .6), $(".parallax .bg4").parallax("50%", .6))
+        }
+        init(), initializePortfolio(), rnr_shortcodes(), $(window).scroll(function() {
+            $(window).scrollTop() > 200 ? $("#back-to-top").fadeIn(200) : $("#back-to-top").fadeOut(200)
+        }), $("#back-to-top, .back-to-top").click(function() {
+            return $("html, body").animate({
+                scrollTop: 0
+            }, "800"), !1
+        }), $("a[data-rel^='prettyPhoto']").prettyPhoto(), $(".container").fitVids(), $("body.onepage").queryLoader2({
+            barColor: "#111111",
+            backgroundColor: "#ffffff",
+            percentage: !0,
+            barHeight: 3,
+            completeAnimation: "fade",
+            minimumTime: 200
+        }), $(".main-menu a, .logo a, .home-logo-text a, .home-logo a, .scroll-to").bind("click", function(e) {
+            $(".main-menu a").removeClass("active"), $(this).addClass("active");
+            var t = $(".navigation").outerHeight();
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top - t + "px"
+            }, {
+                duration: 1200,
+                easing: "easeInOutExpo"
+            }), e.preventDefault()
+        }), $(window).bind("load", function() {
+            e()
+        }), jQuery(".milestone-counter").appear(function() {
+            $(".milestone-counter").each(function() {
+                dataperc = $(this).attr("data-perc"), $(this).find(".milestone-count").delay(6e3).countTo({
+                    from: 0,
+                    to: dataperc,
+                    speed: 2e3,
+                    refreshInterval: 100
+                })
+            })
+        }), e(), $(".team-thumb").on("mouseover", function() {
+            var e = $(this).find(".team-overlay"),
+                t = $(this).find(".overlay-content");
+            e.stop(!0, !0).fadeIn(600), t.stop().animate({
+                top: "40%",
+                opacity: 1
+            }, 600)
+        }).on("mouseleave", function() {
+            var e = $(this).find(".team-overlay"),
+                t = $(this).find(".overlay-content");
+            t.stop().animate({
+                top: "60%",
+                opacity: 0
+            }, 300, function() {
+                t.css("top", "20%")
+            }), e.fadeOut(300)
+        })
+    }), $(window).load(function() {
+        $("#load").fadeOut().remove(), $(window).trigger("hashchange"), $(window).trigger("resize"), $('[data-spy="scroll"]').each(function() {
+            $(this).scrollspy("refresh")
+        }), $.browser.safari && $(".flexslider").flexslider({
+            animation: "slide",
+            direction: "horizontal",
+            slideshow: !1,
+            slideshowSpeed: 3500,
+            animationDuration: 500,
+            directionNav: !0,
+            controlNav: !1,
+            useCSS: !1
+        }), $(".flexslider").flexslider({
+            animation: "slide",
+            direction: "horizontal",
+            slideshow: !1,
+            slideshowSpeed: 3500,
+            animationDuration: 500,
+            directionNav: !0,
+            controlNav: !1
+        }), jQuery(".skillbar").appear(function() {
+            $(".skillbar").each(function() {
+                dataperc = $(this).attr("data-perc"), $(this).find(".skill-percentage").animate({
+                    width: dataperc + "%"
+                }, 10 * dataperc)
+            })
+        }), $(".home-slide-content").fitText(1.2), $(".fittext-content").fitText(2), $("nav.sticky-nav").sticky({
+            topSpacing: 0,
+            className: "sticky",
+            wrapperClassName: "main-menu-wrapper"
+        }), $(window).scrollTop() > $(window).height() ? $("nav.transparent").addClass("scroll") : $("nav.transparent").removeClass("scroll"), $(window).on("scroll", function() {
+            var e = ($(window).height(), $(window).width(), $(window).scrollTop(), $("#home").outerHeight());
+            $(window).scrollTop() > e ? $("nav.transparent").addClass("scroll") : $("nav.transparent").removeClass("scroll")
+        }), selectnav("nav", {
+            nested: !0,
+            indent: "-"
+        })
+    }), $("#home-slider.flexslider").flexslider({
+        animation: "swing",
+        direction: "vertical",
+        slideshow: !0,
+        slideshowSpeed: 3500,
+        animationDuration: 1e3,
+        directionNav: !1,
+        controlNav: !0,
+        smootheHeight: !0,
+        after: function(e) {
+            e.removeClass("loading")
+        }
+    }),
+    function(e) {
+        e.fn.countTo = function(t) {
+            t = e.extend({}, e.fn.countTo.defaults, t || {});
+            var a = Math.ceil(t.speed / t.refreshInterval),
+                n = (t.to - t.from) / a;
+            return e(this).delay(1e3).each(function() {
+                function i() {
+                    s += n, r++, e(o).html(s.toFixed(t.decimals)), "function" == typeof t.onUpdate && t.onUpdate.call(o, s), r >= a && (clearInterval(l), s = t.to, "function" == typeof t.onComplete && t.onComplete.call(o, s))
+                }
+                var o = this,
+                    r = 0,
+                    s = t.from,
+                    l = setInterval(i, t.refreshInterval)
+            })
+        }, e.fn.countTo.defaults = {
+            from: 0,
+            to: 100,
+            speed: 1e3,
+            refreshInterval: 100,
+            decimals: 0,
+            onUpdate: null,
+            onComplete: null
+        }
+    }(jQuery), $(".flex-direction-nav")[0].remove();
+$('.flex-direction-nav')[0].remove();
+</script>
+<!-- Themes Panel -->
